@@ -29,7 +29,6 @@ function Header(props){
                     <div className='bottom-logo'>
                         <button>Logo</button>
                     </div>
-                    <Router>
                         <div className='bottom-nav'>
                             <nav>
                                 <ul>
@@ -44,19 +43,7 @@ function Header(props){
                                 </li>
                                 </ul>
                             </nav>
-                        {/* <Switch>
-                            <Route path="/about">
-                            <About />
-                            </Route>
-                            <Route path="/services">
-                            <Services />
-                            </Route>
-                            <Route path="/">
-                            <Home />
-                            </Route>
-                        </Switch> */}
                     </div>
-                </Router>
                 </div>
             </div>
     </header>

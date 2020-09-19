@@ -24,8 +24,8 @@ function App() {
   ]
   return (
     <div className="App">
-      <Header routes={routes}/>
       <Router >
+      <Header routes={routes}/>
               <Switch>
                 <Route component={About} path="/about" />
                 <Route component={Services} path="/services" />
