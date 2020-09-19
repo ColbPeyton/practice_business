@@ -1,0 +1,47 @@
+@import './colors';
+
+.header-container{
+    width: 100vw;
+    height: 15vh;
+    background: $primary-blue;
+    .header-contents{
+        margin: 0 auto;
+        height: 100%;
+        width: 100%;
+        max-width: 1000px;
+        .top-bar{
+            height: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            .top-info{
+                width: 55%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+        }
+        .bottom-bar{
+            height: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .bottom-logo{
+                height: 100%;
+            }
+            .bottom-nav{
+                height: 100%;
+                width: 60%;
+                ul{
+                    list-style-type: none;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    
+}
