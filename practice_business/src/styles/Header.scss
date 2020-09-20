@@ -1,16 +1,20 @@
 @import './colors';
-
+@import './utilities';
 .header-container{
     width: 100vw;
-    height: 15vh;
-    background: $primary-blue;
+    height: 10vh;
+    letter-spacing: $letter-spacing;
     .header-contents{
-        margin: 0 auto;
-        height: 100%;
         width: 100%;
-        max-width: 1000px;
+        &.top{
+            background: $primary-blue;
+            height: 45%;
+        }
+        &.bottom{
+            height: 55%;
+        }
         .top-bar{
-            height: 50%;
+            height: 100%;
             width: 100%;
             display: flex;
             justify-content: flex-end;
@@ -20,26 +24,83 @@
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
+
+                button{
+                    color: $primary-blue;
+                    border: none;
+                    padding: 5px 15px;
+                    border-radius: 20px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                }
             }
+
         }
         .bottom-bar{
-            height: 50%;
+            height: 100%;
             width: 100%;
+            max-width: $screen-width;
             display: flex;
             justify-content: space-between;
             align-items: center;
             .bottom-logo{
                 height: 100%;
+                width: 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
             .bottom-nav{
                 height: 100%;
-                width: 60%;
-                ul{
-                    list-style-type: none;
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
+                width: 65%;
+                nav{
+                    height: 100%;
+                    width: 100%;
+                    ul{
+                        height: 100%;
+                        width: 100%;
+                        list-style-type: none;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        li{
+                            width: 33%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transition: all 1s;
+                            .nav{
+                                height: 100%;
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                color: $font-color;
+                                text-decoration: none;
+                                &:visited{
+                                    color: $font-color;
+                                    text-decoration: none;
+                                }
+
+                            }
+                            &:hover{
+                                background: #9191915d;
+                                color:$blue-dark;
+
+                                .nav{
+                                    color:$blue-dark;
+                                    &:visited{
+                                        color:$blue-dark;
+                                    }
+    
+                                }
+                            }
+                        }
+       
+                    }
                 }
+
             }
         }
     }

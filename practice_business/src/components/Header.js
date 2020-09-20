@@ -1,23 +1,10 @@
 import React from 'react';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    NavLink
-  } from "react-router-dom";
-
-import Home from './Home';
-import About from './About';
-import Services from './Services';
-
 import '../styles/Header.scss';
 
 function Header(props){
-    console.log(props.routes)
     return(
         <header className='header-container'>
-            <div className='header-contents'>
+            <div className='header-contents top'>
                 <div className='top-bar'>
                     <div className='top-info'>
                         <button>(555)555-5555</button>
@@ -25,6 +12,8 @@ function Header(props){
                         <button>Our Location</button>
                     </div>
                 </div>
+            </div>
+            <div className='header-contents bottom'>
                 <div className='bottom-bar'>
                     <div className='bottom-logo'>
                         <button>Logo</button>
@@ -32,15 +21,7 @@ function Header(props){
                         <div className='bottom-nav'>
                             <nav>
                                 <ul>
-                                <li>
-                                    {props.routes[0]}
-                                </li>
-                                <li>
-                                    {props.routes[1]}
-                                </li>
-                                <li>
-                                    {props.routes[2]}
-                                </li>
+                                    {props.routes.map((route, index) => <li key={index}>{route}</li> )}
                                 </ul>
                             </nav>
                     </div>
