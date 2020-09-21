@@ -1,22 +1,28 @@
-import React, {useState} from 'react';
+import React, {useState,useRef} from 'react';
+import Sidebar from './Sidebar';
 import '../styles/Header.scss';
 
 function Header(props){
 
-    const [active, setActive] = useState(false)
+    const [active, setActive] = useState(false);
+    const [sidebar, setSidebar] = useState(false);
 
     function smallerView(){
         return(
-        <header className= 'header-container-smaller'>
-            <div className='header-logo'>
-                <button>Logo</button> 
+            <div>
+                <header className= 'header-container-smaller'>
+                    <div className='header-logo'>
+                        <button>Logo</button> 
+                    </div>
+                    <button className={`header-dropdown-container ${active ? 'active' : ''}`} onClick={()=> enableOrDisableSidebar()}>
+                        <div className='dropdown'></div>
+                        <div className='dropdown'></div>
+                        <div className='dropdown'></div>
+                    </button>
+                </header>
+            {renderSidebar()}
             </div>
-            <button className={`header-dropdown-container ${active ? 'active' : ''}`} onClick={()=> setActive(!active)}>
-                <div className='dropdown'></div>
-                <div className='dropdown'></div>
-                <div className='dropdown'></div>
-            </button>
-        </header>  
+  
         );
     }
 
@@ -50,6 +56,24 @@ function Header(props){
         )
     }
 
+    function renderSidebar(){
+        return active 
+        ? <Sidebar routes={props.routes} sidebar={sidebar} />
+        : '';
+    }
+
+    function enableOrDisableSidebar(){
+        if(active){
+            setSidebar(false);
+            setTimeout(() => {
+                setActive(false)
+            }, 500);
+        }else{
+            setSidebar(true)
+            setActive(true)
+        }
+
+    }
 
     function renderCorrectView(){
         return window.innerWidth <= 1024
