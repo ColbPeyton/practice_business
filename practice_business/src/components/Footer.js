@@ -1,7 +1,12 @@
 import React from 'react';
+import {NavLink} from "react-router-dom";
+
 import '../styles/Footer.scss';
 
 function Footer(props){
+
+    console.log(props.routes)
+
 
     function smallerView(){
         return(
@@ -11,14 +16,14 @@ function Footer(props){
                         <i className="fas fa-map-marker-alt"></i>
                         <p>Get Directions</p>
                     </button>
-                    <button className='link'>
+                    <NavLink className='link' to='/appointment'>
                         <i className="far fa-calendar-check"></i>
                         <p>Book Appointment</p>
-                    </button>
-                    <button className='link'>
+                    </NavLink>
+                    <NavLink className='link' to='/contact'>
                         <i className="fas fa-phone"></i>
                         <p>Call Us</p>
-                    </button>
+                    </NavLink>
                 </div>
             </div>
         )
