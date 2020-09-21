@@ -1,4 +1,4 @@
-import React, {useState,useRef} from 'react';
+import React, {useState, useEffect} from 'react';
 import Sidebar from './Sidebar';
 import '../styles/Header.scss';
 
@@ -6,6 +6,19 @@ function Header(props){
 
     const [active, setActive] = useState(false);
     const [sidebar, setSidebar] = useState(false);
+    const [width, setWidth] = useState(window.innerWidth);
+
+    // Header will change based on size of screen, detect change in width
+    useEffect(()=>{
+        window.addEventListener("resize", updateWidth);
+        return () => window.removeEventListener("resize", updateWidth);
+
+    })
+
+    function updateWidth(){
+        setWidth(window.innerWidth);
+    }
+
 
     function smallerView(){
         return(
@@ -76,7 +89,7 @@ function Header(props){
     }
 
     function renderCorrectView(){
-        return window.innerWidth <= 1024
+        return width <= 1024
         ? smallerView()
         : largerView()
     }
