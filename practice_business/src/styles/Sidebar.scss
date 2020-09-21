@@ -2,7 +2,7 @@
 @import './utilities';
 
 .sidebar{
-    height: 100vh;
+    height: 1000vh;
     width: 260px;
     position: absolute;
     top: 0;
@@ -11,7 +11,8 @@
     background: $background-light-primary;
     // animation: slideIn ease-in-out 0.5s forwards;
     .sidebar-container{
-        width: 100%;
+        position: fixed;
+        width: 260px;
         height: 460px;
         display: flex;
         flex-direction: column;

@@ -58,7 +58,7 @@ function Header(props){
 
     function renderSidebar(){
         return active 
-        ? <Sidebar routes={props.routes} sidebar={sidebar} disableSidebar={enableOrDisableSidebar}/>
+        ? <Sidebar routes={props.routes} sidebar={sidebar} disableSidebar={enableOrDisableSidebar} />
         : '';
     }
 

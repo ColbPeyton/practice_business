@@ -5,9 +5,6 @@ import '../styles/Footer.scss';
 
 function Footer(props){
 
-    console.log(props.routes)
-
-
     function smallerView(){
         return(
             <div className='footer small'>

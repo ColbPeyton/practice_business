@@ -25,13 +25,18 @@ function App() {
   // Header will change based on size of screen, detect change in width
   useEffect(()=>{
       window.addEventListener("resize", updateWidth);
-      return () => window.removeEventListener("resize", updateWidth);
+      return () => {
+        window.removeEventListener("resize", updateWidth);
+      }
+
 
   })
 
   function updateWidth(){
-      setWidth(window.innerWidth);
+    setWidth(window.innerWidth);
   }
+
+
 
   const routes = [
     <NavLink className='nav' activeClassName="selected" to="/">Home</NavLink>,

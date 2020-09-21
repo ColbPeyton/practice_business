@@ -16,9 +16,8 @@ function Sidebar(props){
         props.disableSidebar();
     }
 
-
     return(
-        <div className={`sidebar`} style={ { animation: `${active ? "slideIn" : "slideOut"} 0.5s forwards` }} >
+        <div className={`sidebar`} style={ {animation: `${active ? "slideIn" : "slideOut"} 0.5s forwards` }} >
             <div className='sidebar-container'>
                 <div className='sidebar-logo'>
                     <button>Logo</button> 
