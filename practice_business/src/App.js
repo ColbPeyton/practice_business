@@ -49,7 +49,7 @@ function App() {
                 <Route component={Services} path="/services" />
                 <Route component={Appointment} path="/appointment" />
                 <Route component={Contact} path="/contact" />
-                <Route exact component={Home} path="/" />
+                <Route exact component={() => <Home width={width} /> } path="/"/>
                 <Route component={Page404} />
               </Switch>
         <Footer width={width} routes={[routes[3],routes[4]]}/>
