@@ -10,6 +10,12 @@ function Sidebar(props){
        setActive(props.sidebar)
     }, [props.sidebar]);
 
+    // call parent function to disable sidebar when link is clicked
+    function disable(){
+        setActive(false);
+        props.disableSidebar();
+    }
+
 
     return(
         <div className={`sidebar`} style={ { animation: `${active ? "slideIn" : "slideOut"} 0.5s forwards` }} >
@@ -20,7 +26,7 @@ function Sidebar(props){
                 <div className='sidebar-container-links'>
                     <nav>
                         <ul>
-                            {props.routes.map((route, index) => <li key={index}>{route}</li> )}
+                            {props.routes.map((route, index) => <li onClick={()=> disable()} key={index}>{route}</li> )}
                         </ul>
                     </nav>
                     <div className='sidebar-number'>

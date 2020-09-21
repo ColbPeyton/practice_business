@@ -1,0 +1,35 @@
+@import './colors';
+
+.footer{
+    width: 100vw;
+    height: 200px;
+    background: $blue-dark;
+    &.small{
+        z-index: 2;
+        height: 60px;
+        width: 100%;
+        position:fixed;
+        left:0px;
+        bottom:0px;
+
+        .footer-container{
+            margin: 0 auto;
+            width: 95%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .link{
+                border: none;
+                background: none;
+                color: $background-light-primary;
+                font-size: 13px;
+
+                i{
+                    font-size: 25px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}

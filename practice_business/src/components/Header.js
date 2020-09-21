@@ -6,19 +6,6 @@ function Header(props){
 
     const [active, setActive] = useState(false);
     const [sidebar, setSidebar] = useState(false);
-    const [width, setWidth] = useState(window.innerWidth);
-
-    // Header will change based on size of screen, detect change in width
-    useEffect(()=>{
-        window.addEventListener("resize", updateWidth);
-        return () => window.removeEventListener("resize", updateWidth);
-
-    })
-
-    function updateWidth(){
-        setWidth(window.innerWidth);
-    }
-
 
     function smallerView(){
         return(
@@ -71,7 +58,7 @@ function Header(props){
 
     function renderSidebar(){
         return active 
-        ? <Sidebar routes={props.routes} sidebar={sidebar} />
+        ? <Sidebar routes={props.routes} sidebar={sidebar} disableSidebar={enableOrDisableSidebar}/>
         : '';
     }
 
@@ -89,11 +76,10 @@ function Header(props){
     }
 
     function renderCorrectView(){
-        return width <= 1024
+        return props.width <= 1024
         ? smallerView()
         : largerView()
     }
-
 
     return(
         renderCorrectView()

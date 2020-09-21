@@ -134,7 +134,7 @@
             border: 2px solid $blue-dark;
             background: $blue-dark;
             border-radius: 10px;
-            transition: all 0.15s;
+            transition: all 0.10s;
         }
 
         &:focus { outline: none; }
@@ -161,14 +161,4 @@
             }
         }
     }
-}
-
-
-
-@keyframes open{
-    
-}
-
-@keyframes close{
-
 }

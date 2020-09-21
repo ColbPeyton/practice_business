@@ -43,11 +43,17 @@
                     justify-content: flex-start;
                     align-items: center;
                     border-bottom: 1px solid #f0eeee;
-                    
-                    a{
-                        color: $font-color-light;
+
+                    .nav{
+                        height: 100%;
+                        width: 100%;
+                        color: $font-color-light;  
                         letter-spacing: 1px;
                         text-decoration: none;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding-left: 10px;
                         &:visited{
                             color: $font-color-light;
                             text-decoration: none;
