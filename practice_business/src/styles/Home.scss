@@ -11,15 +11,10 @@
             flex-direction: column;
             align-items: center;
             .home-container-img{
-                border: 1px solid red;
                 width: 100%;
-                height: 25vh;
+                height: 30vh;
                 margin-bottom: 0.5rem;
-
-                img{
-                    max-width: 100%;
-                    max-height: auto;
-                }
+                background: url('../images/yoga_hero.jpg') no-repeat 0 0 /cover;
             }
             
             .home-container-top{
@@ -144,8 +139,27 @@
                         }
                     }
                 }
+                
+            }
+            .home-paralax-container{
+                height: 20vh;
+                width: 100%;
+                .paralax{
+                    width: 100%;
+                    height: 100%;
+                    background-image: url('../images/yoga_paralax.jpg');
+                    background-attachment: fixed;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
             }
 
+            .home-classes{
+                height: 50vh;
+                max-height: 500px;
+                width: 80%;
+            }
 
         }
 
@@ -161,13 +175,25 @@
         .home-container{
             &.small{
                 .home-container-img{
-                    height: 22vh;
+                 
                 }
                 .link{
                     p{
                         width: 75%;
                     }
                 }
+            }
+        }
+    }
+}
+@media screen and (min-width: 480px){
+    .home{
+        .home-container{
+            &.small{
+                .home-container-img{
+                    height: 50vh;
+                }
+                
             }
         }
     }

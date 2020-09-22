@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
 
-
+import yogaHero from '../images/yoga_hero.jpg';
 import '../styles/Home.scss';
 
 function Home(props){
@@ -10,7 +10,6 @@ function Home(props){
         <main className='home'>
             <div className={`home-container ${props.width <= 1024 ? 'small' : 'large' }`}>
                 <div className='home-container-img'>
-                    <img src='' alt='our staff'/>
                 </div>
                 <div className='home-container-top'>
                     <div className='home-container-tagline'>
@@ -19,7 +18,7 @@ function Home(props){
                     </div>
                     <div className='home-container-btn'>
                         <NavLink className='link' to='/appointment'>
-                            <p>Book Appointment</p>
+                            <p>Let's Get Started</p>
                         </NavLink>
                     </div>
                 </div>
@@ -47,6 +46,24 @@ function Home(props){
                         <div className='info'>
                             <h3>Here for you!</h3>
                             <p>Get helped by pros to take your yoga skills to the next level.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="home-paralax-container">
+                    <div className='paralax'></div>
+                </div>
+                <div className='home-classes'>
+                    <div className='classes-title'>
+                        <h2>Classes</h2>
+                    </div>
+                    <div className='classes-information'>
+                        <div className='info-container'>
+                            <div className='info-top'>
+                                <h3>Basic</h3>
+                            </div>
+                            <div className='info-bot'>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
