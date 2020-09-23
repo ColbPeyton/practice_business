@@ -5,7 +5,8 @@ import DropDown from './DropDown';
 
 function DropDownContainer(props){
     
-    const [dropDown, setDropDown] = useState(generateList());
+    const [dropDown, setDropDown] = useState(generateList);
+
 
     function generateList(){
         const data =  [];
@@ -17,6 +18,7 @@ function DropDownContainer(props){
                     key={index} 
                     active={false}
                     setActive={setActiveChild}
+                    removeActive={removeActiveChild}
                     id={index}
                 />
                 )
@@ -24,17 +26,26 @@ function DropDownContainer(props){
         return data;
     }
 
-    // function resetActiveChild(){
-    //     const data = dropDown;
-    //     data.forEach(d => d.active = false);
-    //     return data;
-    // }
+
+    function removeActiveChild(index){
+        setDropDown(
+            dropDown.map((drop) => {
+                return drop.props.id === index 
+                ? <DropDown title={drop.props.title} desc={drop.props.desc} key={drop.props.id} id={drop.props.id}  setActive={setActiveChild} removeActive={removeActiveChild} active={false}/>
+                : drop
+            })
+        )
+    }
+
 
     function setActiveChild(index){
-        const data = generateList();
-        const {title, desc, id} = data[index].props;
-        data[index] = <DropDown title={title} desc={desc} key={id} id={id}  setActive={setActiveChild} active={true}/>
-        setDropDown(data);
+        setDropDown(
+            dropDown.map((drop) => {
+                return drop.props.id === index 
+                ? <DropDown title={drop.props.title} desc={drop.props.desc} key={drop.props.id} id={drop.props.id}  setActive={setActiveChild} removeActive={removeActiveChild} active={true}/>
+                : drop
+            })
+        )
     }
 
 

@@ -2,12 +2,15 @@ import React from 'react';
 
 function DropDown(props){
 
-    function setActive(){
-        props.setActive(props.id);
+
+    function callParentFunctionToSetActive(){
+        props.active
+        ? props.removeActive(props.id)
+        : props.setActive(props.id);
     }
 
     return(
-        <div className={`class ${props.active ? 'active' : ''}`} onClick={setActive}>
+        <div className={`class ${props.active ? 'active' : ''}`} onClick={callParentFunctionToSetActive}>
             <div className='class-top'>
                 <h3>{props.title}</h3>
                 <i className="fas fa-caret-down"></i>
