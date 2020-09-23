@@ -1,7 +1,10 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
 
-import yogaHero from '../images/yoga_hero.jpg';
+import DropDownContainer from './DropDownContainer';
+
+import DropDownData from '../_data/DropDownData';
+
 import '../styles/Home.scss';
 
 function Home(props){
@@ -56,80 +59,7 @@ function Home(props){
                     <div className='classes-title'>
                         <h2>Classes</h2>
                     </div>
-                    <div className='classes-container'>
-                        <div className='class'>
-                            <div className='class-top'>
-                                <h3>ANUSARA</h3>
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                            <div className='class-bot'>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div className='class'>
-                            <div className='class-top'>
-                                <h3>ASHTANGA</h3>
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                            <div className='class-bot'>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div className='class'>
-                            <div className='class-top'>
-                                <h3>BIKRAM</h3>
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                            <div className='class-bot'>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div className='class'>
-                            <div className='class-top'>
-                                <h3>HATHA</h3>
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                            <div className='class-bot'>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div className='class'>
-                            <div className='class-top'>
-                                <h3>HOT YOGA</h3>
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                            <div className='class-bot'>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div className='class'>
-                            <div className='class-top'>
-                                <h3>IYENGAR</h3>
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                            <div className='class-bot'>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div className='class'>
-                            <div className='class-top'>
-                                <h3>RESTORATIVE</h3>
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                            <div className='class-bot'>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div className='class'>
-                            <div className='class-top'>
-                                <h3>VINYASA</h3>
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                            <div className='class-bot'>
-                                <p></p>
-                            </div>
-                        </div>
-                    </div>
+                <DropDownContainer data={DropDownData}/>
                 </div>
             </div>
         </main>
