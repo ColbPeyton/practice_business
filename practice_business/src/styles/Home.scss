@@ -171,23 +171,24 @@
 
                 .drop-down-container{
                     width: 100%;
-                    height: 75vh;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    align-items: center;
+                    height: 90vh;
                     padding-bottom: 1rem;
 
                     .drop-down{
-                        height: 400px;
+                        margin: 0 auto;
+                        max-height: 200px;
                         width: 80%;
                         border-radius: 5px;
+                        margin-bottom: 20px;
+                        transition: all 0.25s ease-in-out;
+
  
                         .drop-top{
                             align-self: flex-start;
                             color: $background-light-primary;
                             border: 2px solid $blue-light;
                             background: $primary-blue;
+                            transition: all 0.15s ease-in-out;
 
                             border-radius: 5px;
                             margin: 0 auto;
@@ -206,33 +207,42 @@
                             }
                         }
                         .drop-bot{
-                            display: none;
+                            opacity: 0;
+                            transition: all 0.45s ease-in-out;
+
+
                         }
 
                         &.active{
-                            height: 700px;
-                            margin-bottom: 1rem;
+                            max-height: 350px;
+
 
                             .drop-top{
                                 background: $primary-red;
+                                border-bottom: 3px solid transparent;
                             }
                 
                             .drop-bot{
+                                opacity: 1;
+                                position: relative;
                                 background: $background-light-secondary;
                                 padding-top: 1rem;
                                 width: 99%;
                                 margin: 0  auto;
-                                height: 150px;
+                                height: 100px;
                                 display: flex;
                                 justify-content: flex-start;
-                                align-items: center;
+                                align-items: flex-start;
                                 border: 2px solid $blue-light;
                                 border-top: none;
-                                border-radius: 5px;
                                 z-index: 0;
+                                border-bottom-left-radius: 5px;
+                                border-bottom-right-radius: 5px;
 
                                 p{
-                                    padding: 10px;
+                                    padding-left: 10px;
+                                    font-weight: 100;
+                                    font-size: 0.95rem;
                                 }
                             }
                         }
@@ -247,6 +257,7 @@
         }
     }
 }
+
 
 
 @media screen and (max-width: 325px){

@@ -16,6 +16,7 @@ function DropDown(props){
                 <i className="fas fa-caret-down"></i>
             </div>
             <div className='drop-bot'>
+                <p>{props.difficulty}</p>
                 <p>{props.desc}</p>
             </div>
     </div>
