@@ -10,12 +10,12 @@ function DropDown(props){
     }
 
     return(
-        <div className={`class ${props.active ? 'active' : ''}`} onClick={callParentFunctionToSetActive}>
-            <div className='class-top'>
+        <div className={`drop-down ${props.active ? 'active' : ''}`} onClick={callParentFunctionToSetActive}>
+            <div className='drop-top'>
                 <h3>{props.title}</h3>
                 <i className="fas fa-caret-down"></i>
             </div>
-            <div className='class-bot'>
+            <div className='drop-bot'>
                 <p>{props.desc}</p>
             </div>
     </div>
