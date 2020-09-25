@@ -6,9 +6,9 @@ function BottomScreenInfo(){
     return(
         <div className='bottom-screen'>
             <div className='links'>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-instagram"></i>
+            <i className="fab fa-twitter"></i>
+            <i className="fab fa-facebook"></i>
+            <i className="fab fa-instagram"></i>
             </div>
             <div className='info'>
                 <p>(555) 555-5555</p>

@@ -1,4 +1,8 @@
 import React, {useState, useEffect} from 'react';
+import {NavLink} from "react-router-dom";
+
+import icon from '../images/icon.png';
+
 
 import '../styles/Sidebar.scss';
 
@@ -20,7 +24,9 @@ function Sidebar(props){
         <div className={`sidebar`} style={ {animation: `${active ? "slideIn" : "slideOut"} 0.5s forwards` }} >
             <div className='sidebar-container'>
                 <div className='sidebar-logo'>
-                    <button>Logo</button> 
+                    <NavLink className='link' to='/' onClick={() => disable()}>
+                        <img src={icon} alt='gym icon'/>
+                    </NavLink> 
                 </div>
                 <div className='sidebar-container-links'>
                     <nav>

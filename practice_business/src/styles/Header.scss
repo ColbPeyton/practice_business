@@ -110,7 +110,6 @@
 .header-container-smaller{
     width: 100%;
     height: 65px;
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -118,7 +117,23 @@
     background: #fff;
 
     .header-logo{
+        width: 50px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
+        .link{
+            border: none;
+            background-color: #fff;
+            padding-left: 10px;
+            img{
+                max-height: auto;
+                max-width: 100%;
+                cursor: pointer;
+            }
+
+        }
     }
     .header-dropdown-container{
         height: 35%;

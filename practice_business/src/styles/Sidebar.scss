@@ -25,6 +25,22 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            .link{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                height: 90px;
+                width: 100%;
+
+                img{
+                    max-height: auto;
+                    max-width: 25%;
+                    cursor: pointer;
+                }
+    
+            }
         }
 
         .sidebar-container-links{

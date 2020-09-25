@@ -1,6 +1,9 @@
 import React, {useState} from 'react';
+import {NavLink} from "react-router-dom";
 import Sidebar from './Sidebar';
 import '../styles/Header.scss';
+
+import icon from '../images/icon.png';
 
 function Header(props){
 
@@ -12,7 +15,9 @@ function Header(props){
             <div>
                 <header className= 'header-container-smaller'>
                     <div className='header-logo'>
-                        <button>Logo</button> 
+                        <NavLink className='link' to='/'>
+                            <img src={icon} alt='gym icon'/>
+                        </NavLink> 
                     </div>
                     <button className={`header-dropdown-container ${active ? 'active' : ''}`} onClick={()=> enableOrDisableSidebar()}>
                         <div className='dropdown'></div>
