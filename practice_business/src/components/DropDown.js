@@ -7,6 +7,12 @@ function DropDown(props){
         props.active
         ? props.removeActive(props.id)
         : props.setActive(props.id);
+    };
+
+    function styleDifficulty(){
+        return props.difficulty === 'Beginner'
+        ? 'beginner'
+        : 'advanced'
     }
 
     return(
@@ -16,7 +22,7 @@ function DropDown(props){
                 <i className="fas fa-caret-down"></i>
             </div>
             <div className='drop-bot'>
-                <p>{props.difficulty}</p>
+                <p className={`difficulty ${styleDifficulty()}`}>{props.difficulty}</p>
                 <p>{props.desc}</p>
             </div>
     </div>

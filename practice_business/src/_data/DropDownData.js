@@ -5,23 +5,8 @@ module.exports = [
         difficulty: 'Advanced'
     },
     {
-        title: 'Pilates' ,
-        desc: 'Build core strength and flexibility.',
-        difficulty: 'Beginner'
-    },
-    {
-        title: 'Treadmill' ,
-        desc: 'Circuit-style classes that have you switching from the treadmill to the floor to work with weights.',
-        difficulty: 'Beginner'
-    },
-    {
         title: 'Kickboxing' ,
         desc: 'Jumping around and learning kicking and punching combinations',
-        difficulty: 'Beginner'
-    },
-    {
-        title: 'Bokwa' ,
-        desc: 'Hip hop-centric dance workout',
         difficulty: 'Beginner'
     },
     {
@@ -36,7 +21,7 @@ module.exports = [
     },
     {
         title: 'HIIT' ,
-        desc: 'High-intensity interval training. Putting your body in anaerobic mode, whilst strengthening and working muscles and the cardio system.',
+        desc: 'High-intensity interval training. Strengthening and working muscles and the cardio system.',
         difficulty: 'Advanced'
     },
 

@@ -17,11 +17,11 @@ function Home(props){
                 <div className='home-container-top'>
                     <div className='home-container-tagline'>
                         <h1>Hello</h1>
-                        <h2>Yoga!</h2>
+                        <h2>Fitness!</h2>
                     </div>
                     <div className='home-container-btn'>
                         <NavLink className='link' to='/appointment'>
-                            <p>Let's Get Started</p>
+                            <p>Let's Get To Work</p>
                         </NavLink>
                     </div>
                 </div>
@@ -30,7 +30,7 @@ function Home(props){
                         <p>Yoga Studio in New Orleans, LA</p>
                     </div>
                     <div className='body-about'>
-                        <h3>A Different Type of Yoga</h3>
+                        <h3>We Put You to Work</h3>
                         <p>Helping the local community stay in shape for the past 30 years.</p>
                     </div>
                     <div className='body-information'>

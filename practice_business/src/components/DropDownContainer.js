@@ -15,6 +15,7 @@ function DropDownContainer(props){
                 <DropDown 
                     title={d.title} 
                     desc={d.desc} 
+                    difficulty={d.difficulty}
                     key={index} 
                     active={false}
                     setActive={setActiveChild}
@@ -31,7 +32,7 @@ function DropDownContainer(props){
         setDropDown(
             dropDown.map((drop) => {
                 return drop.props.id === index 
-                ? <DropDown title={drop.props.title} desc={drop.props.desc} key={drop.props.id} id={drop.props.id}  setActive={setActiveChild} removeActive={removeActiveChild} active={false}/>
+                ? <DropDown title={drop.props.title} desc={drop.props.desc} key={drop.props.id} id={drop.props.id} difficulty={drop.props.difficulty}  setActive={setActiveChild} removeActive={removeActiveChild} active={false}/>
                 : drop
             })
         )
@@ -42,7 +43,7 @@ function DropDownContainer(props){
         setDropDown(
             dropDown.map((drop) => {
                 return drop.props.id === index 
-                ? <DropDown title={drop.props.title} desc={drop.props.desc} key={drop.props.id} id={drop.props.id}  setActive={setActiveChild} removeActive={removeActiveChild} active={true}/>
+                ? <DropDown title={drop.props.title} desc={drop.props.desc} key={drop.props.id} id={drop.props.id} difficulty={drop.props.difficulty} setActive={setActiveChild} removeActive={removeActiveChild} active={true}/>
                 : drop
             })
         )
