@@ -2,6 +2,7 @@ import React from 'react';
 import {NavLink} from "react-router-dom";
 
 import DropDownContainer from './DropDownContainer';
+import BottomScreenInfo from './BottomScreenInfo';
 
 import DropDownData from '../_data/DropDownData';
 
@@ -27,7 +28,7 @@ function Home(props){
                 </div>
                 <div className='home-container-body'>
                     <div className='body-tagline'>
-                        <p>Yoga Studio in New Orleans, LA</p>
+                        <p>Gym in New Orleans, LA</p>
                     </div>
                     <div className='body-about'>
                         <h3>We Put You to Work</h3>
@@ -48,7 +49,7 @@ function Home(props){
                         </div>
                         <div className='info'>
                             <h3>Here for you!</h3>
-                            <p>Get helped by pros to take your yoga skills to the next level.</p>
+                            <p>Get helped by pros to take your fitness to the next level.</p>
                         </div>
                     </div>
                 </div>
@@ -60,6 +61,9 @@ function Home(props){
                         <h2>Classes</h2>
                     </div>
                 <DropDownContainer data={DropDownData}/>
+                </div>
+                <div className='bottom-info'>
+                    <BottomScreenInfo />
                 </div>
             </div>
         </main>

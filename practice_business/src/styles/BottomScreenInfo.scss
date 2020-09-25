@@ -1,0 +1,30 @@
+@import './colors';
+
+
+.bottom-screen{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: $background-dark;
+    color: #fff;
+
+    .links{
+        width: 80%;
+        height: 40%;
+        font-size: 2rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .info{
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        font-size: 0.9rem;
+        font-weight: 100;
+    }
+}
