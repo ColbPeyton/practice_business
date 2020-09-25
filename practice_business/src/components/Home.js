@@ -44,12 +44,12 @@ function Home(props){
                             <p>Beginner or Expert, all are welcome.</p>
                         </div>
                         <div className='info'>
-                            <h3>Variety of types</h3>
+                            <h3>Weights/Crossfit</h3>
                             <p>A little something for everyone.</p>
                         </div>
                         <div className='info'>
                             <h3>Here for you!</h3>
-                            <p>Get helped by pros to take your fitness to the next level.</p>
+                            <p>Get helped by pros to take your fitness routine to the next level.</p>
                         </div>
                     </div>
                 </div>
