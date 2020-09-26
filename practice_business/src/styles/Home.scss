@@ -11,10 +11,11 @@
             flex-direction: column;
             align-items: center;
             .home-container-img{
+                margin-top: 65px;
                 width: 100%;
-                height: 30vh;
+                height: 35vh;
                 margin-bottom: 0.5rem;
-                background: url('../images/weights.jpg') no-repeat 0 0 /cover;
+                background: url('../images/rodrigo-sarsfield-2mz9IKab7DE-unsplash.jpg') no-repeat center center /cover;
             }
             
             .home-container-top{
@@ -147,7 +148,7 @@
                 .paralax{
                     width: 100%;
                     height: 100%;
-                    background-image: url('../images/man-lifting.jpg');
+                    background-image: url('../images/luis-vidal-FodEsaNZs48-unsplash.jpg');
                     background-attachment: fixed;
                     background-position: center;
                     background-repeat: no-repeat;
@@ -288,17 +289,44 @@
 
 
 
-@media screen and (max-width: 325px){
+@media screen and (min-width: 375px){
     .home{
         .home-container{
             &.small{
                 .home-container-img{
-                 
+                    height: 40vh;
                 }
-                .link{
-                    p{
-                        width: 75%;
+                .home-container-top{
+                    height: 35vh;
+                    .home-container-tagline{
+                        height: 70%;
+                        width: 100%;
+                        h1{
+                        }
+                        h2{
+                            font-size: 3.25rem;
+                        }
                     }
+                }
+    
+                .home-container-body{
+                    height: 115vh;
+    
+                    .body-information{
+                        height: 60%;
+                    }
+                    
+                }
+                .home-paralax-container{
+                    height: 35vh;
+                }
+    
+                .home-classes{
+                    height: 120vh;
+                    max-height: 800px;
+                }
+                .bottom-info{
+                    height: 35vh;
                 }
             }
         }
@@ -316,3 +344,23 @@
         }
     }
 }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    
+ }

@@ -17,8 +17,8 @@ function Home(props){
                 </div>
                 <div className='home-container-top'>
                     <div className='home-container-tagline'>
-                        <h1>Hello</h1>
-                        <h2>Fitness!</h2>
+                        <h1>Power</h1>
+                        <h2>Fitness</h2>
                     </div>
                     <div className='home-container-btn'>
                         <NavLink className='link' to='/appointment'>
