@@ -15,7 +15,7 @@ function Footer(props){
                     </button>
                     <NavLink className='link' to='/appointment'>
                         <i className="far fa-calendar-check"></i>
-                        <p>Book Appointment</p>
+                        <p>Schedule a Visit</p>
                     </NavLink>
                     <NavLink className='link' to='/contact'>
                         <i className="fas fa-phone"></i>

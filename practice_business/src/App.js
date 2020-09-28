@@ -10,7 +10,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
 import Services from './components/Services';
-import Contact from './components/Contact';
+import Trainers from './components/Trainers';
 import Page404 from './components/Page404';
 import Appointment from './components/Appointment';
 import Footer from './components/Footer';
@@ -40,10 +40,10 @@ function App() {
 
   const routes = [
     <NavLink className='nav' activeClassName="selected" to="/">Home</NavLink>,
-    <NavLink className='nav' activeClassName="selected" to="/about">About</NavLink>,
-    <NavLink className='nav' activeClassName="selected" to="/services">Services</NavLink>,
-    <NavLink className='nav' activeClassName="selected" to="/contact">Contact</NavLink>,
-    <NavLink className='nav' activeClassName="selected" to="/appointment">Book Appointment</NavLink>
+    <NavLink className='nav' activeClassName="selected" to="/about">About Us</NavLink>,
+    <NavLink className='nav' activeClassName="selected" to="/services">What We Offer</NavLink>,
+    <NavLink className='nav' activeClassName="selected" to="/trainers">Our Trainers</NavLink>,
+    <NavLink className='nav' activeClassName="selected" to="/appointment">Schedule a Visit</NavLink>
   ]
   return (
     <div className="App">
@@ -53,7 +53,7 @@ function App() {
                 <Route component={About} path="/about" />
                 <Route component={Services} path="/services" />
                 <Route component={Appointment} path="/appointment" />
-                <Route component={Contact} path="/contact" />
+                <Route component={Trainers} path="/trainers" />
                 <Route exact component={() => <Home width={width} /> } path="/"/>
                 <Route component={Page404} />
               </Switch>
