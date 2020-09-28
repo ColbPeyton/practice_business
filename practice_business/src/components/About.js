@@ -1,11 +1,15 @@
 import React from 'react';
 
-function About(){
+import '../styles/About.scss';
+
+function About(props){
 
     return(
-        <div>
-            about
-        </div>
+        <main className='about'>
+            <div className={`about-container ${props.width <= 1024 ? 'small' : 'large' }`}>
+
+            </div>
+        </main>
     );
 };
 
