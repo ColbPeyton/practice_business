@@ -3,7 +3,7 @@ import React from 'react';
 function TrainerProfile(props){
     return(
         <div className='profile'>
-            <img src={props.src} alt={props.alt} />
+            <img src={props.image.image} alt={props.image.alt} />
         </div>
     );
 
