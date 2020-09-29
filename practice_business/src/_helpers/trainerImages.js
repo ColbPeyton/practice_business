@@ -7,21 +7,21 @@ const images = importAll(require.context('../images/trainers', false, /\.(png|jp
 const trainerInfo = [
     {
         name: 'Amber',
-        focus: 'Yoga & Kickboxing',
+        focus: 'Yoga, Kickboxing',
         desc: 'Since 2017, Amber has been kicking our members into shape.',
         image: images[0],
         alt: 'Trainer Amber'
     },
     {
         name: 'James',
-        focus: 'Weightlifting & Crossfit',
+        focus: 'Weightlifting, Crossfit',
         desc: 'Our most requested trainer, James will help you reach your fitness goals.',
         image: images[1],
         alt: 'Trainer James'
     },
     {
         name: 'Kayla',
-        focus: 'Pound, HIIT, & Crossfit',
+        focus: 'Pound, HIIT, Crossfit',
         desc: 'Kayla is certified to train in almost the entire gym. She knows her stuff.',
         image: images[2],
         alt: 'Trainer Kayla'
