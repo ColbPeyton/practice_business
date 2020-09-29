@@ -115,6 +115,7 @@
     align-items: center;
     position: fixed;
     background: #fff;
+    z-index: 10;
 
     .header-logo{
         width: 50px;
@@ -168,7 +169,7 @@
                 transform: translateY(2px) rotate(45deg);
                 border-radius: 15px;
 
-                z-index: 2;
+                z-index: 10;
             }
             .dropdown:nth-of-type(3n){
                 transform: translateY(-2px) rotate(-45deg);

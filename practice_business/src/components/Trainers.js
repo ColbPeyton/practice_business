@@ -26,7 +26,7 @@ function Trainers(){
                 </div>
                 <div className='header-container-btn'>
                         <NavLink className='link' to='/appointment'>
-                            <p>Let's Get To Work</p>
+                            <p>Let's Get Started</p>
                         </NavLink>
                     </div>
             </div>
