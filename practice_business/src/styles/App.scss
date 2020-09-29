@@ -1,7 +1,7 @@
 @import './colors';
 .App{
     font-family: Arial, Helvetica, sans-serif;
-
+    overflow: hidden;
     button:focus{outline: none;}
 
     .link{

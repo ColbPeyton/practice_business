@@ -10,6 +10,7 @@
     left: -260px;
     z-index: 100;
     background: $background-light-primary;
+    overflow: hidden;
     // animation: slideIn ease-in-out 0.5s forwards;
     .sidebar-container{
         position: fixed;
