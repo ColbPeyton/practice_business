@@ -1,10 +1,8 @@
-function importAll(r) {
-    return r.keys().map(r);
-  }
+import importImages from '../_helpers/importImages';
 
-const images = importAll(require.context('../images/trainers', false, /\.(png|jpe?g|svg)$/));
+const images = importImages(require.context('../images/trainers', false, /\.(png|jpe?g|svg)$/));
 
-const trainerInfo = [
+const trainerImages = [
     {
         name: 'Amber',
         focus: 'Yoga, Kickboxing',
@@ -42,4 +40,4 @@ const trainerInfo = [
     },
 ];
 
-export default trainerInfo;
+export default trainerImages;

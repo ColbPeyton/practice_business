@@ -1,0 +1,55 @@
+.services{
+    height: 100%;
+    width: 100%;
+
+    .services-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1rem;
+
+        .header-img{
+            margin-top: 65px;
+            width: 100%;
+            height: 50vh;
+            margin-bottom: 1rem;
+            background: url('../images/weights.jpg') no-repeat center center /cover;
+            max-height: 750px;
+
+            &::after{
+                content: "";
+                position: absolute;
+                margin-top: 65px;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 50vh;
+                background: rgba(0, 0, 0, 0.384) ;
+                max-height: 750px;
+            }
+        }
+
+        .header-title{
+            margin-top: 65px;
+            width: 100%;
+            height: 50vh;
+            max-height: 750px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 3;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #fff;
+
+            h2{
+                font-size: 3rem;
+            }
+        }
+        
+    }
+}

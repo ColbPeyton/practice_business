@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 
 import TrainerProfile from './TrainerProfile';
 
-import trainerImages from '../_helpers/trainerImages';
+import trainerImages from '../_data/trainerData';
 
 import '../styles/Trainers.scss';
 

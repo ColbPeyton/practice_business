@@ -14,6 +14,8 @@ import Trainers from './components/Trainers';
 import Page404 from './components/Page404';
 import Appointment from './components/Appointment';
 import Footer from './components/Footer';
+import SimpleReactLightbox from "simple-react-lightbox";
+
 
 import './styles/App.scss';
 
@@ -47,18 +49,20 @@ function App() {
   ]
   return (
     <div className="App">
-      <Router >
-        <Header routes={routes} width={width}/>
-              <Switch>
-                <Route component={About} path="/about" />
-                <Route component={Services} path="/services" />
-                <Route component={Appointment} path="/appointment" />
-                <Route component={Trainers} path="/trainers" />
-                <Route exact component={() => <Home width={width} /> } path="/"/>
-                <Route component={Page404} />
-              </Switch>
-        <Footer width={width} routes={[routes[3],routes[4]]}/>
-      </Router>
+    <SimpleReactLightbox>
+        <Router >
+          <Header routes={routes} width={width}/>
+                <Switch>
+                  <Route component={About} path="/about" />
+                  <Route component={Services} path="/services" />
+                  <Route component={Appointment} path="/appointment" />
+                  <Route component={Trainers} path="/trainers" />
+                  <Route exact component={() => <Home width={width} /> } path="/"/>
+                  <Route component={Page404} />
+                </Switch>
+          <Footer width={width} routes={[routes[3],routes[4]]}/>
+        </Router>
+      </SimpleReactLightbox>
     </div>
   );
 }
