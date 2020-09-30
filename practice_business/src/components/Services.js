@@ -3,8 +3,10 @@ import React from 'react';
 function Services(){
 
     return(
-        <div>
-            services
+        <div className='services'>
+            <div className='services-container'>
+
+            </div>
         </div>
     );
 };

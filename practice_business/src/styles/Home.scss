@@ -14,16 +14,15 @@
                 margin-top: 65px;
                 width: 100%;
                 height: 35vh;
-                margin-bottom: 0.5rem;
-                background: url('../images/rodrigo-sarsfield-2mz9IKab7DE-unsplash.jpg') no-repeat center center /cover;
+                background: url('../images/gym/equipment_04.jpg') no-repeat center center /cover;
             }
             
             .home-container-top{
                 width: 100%;
-                height: 30vh;
+                height: 40vh;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-around;
+                justify-content: space-between;
                 align-items: center;
                 .home-container-tagline{
                     height: 70%;
@@ -31,7 +30,9 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
+                    color: #fff;
                     align-items: center;
+                    background: $primary-red;
                     h1{
                         font-size: 4rem;
                         line-height: 1;
@@ -43,7 +44,7 @@
                 }
 
                 .home-container-btn{
-                    height: 25%;
+                    height: 20%;
                     width: 100%;
                     display: flex;
                     justify-content: center;
@@ -402,14 +403,16 @@
                     height: 45vh;
                 }
                 .home-container-top{
+                    height: 45vh;
+                    max-height: 350px;
                     .home-container-tagline{
                         height: 70%;
                         width: 100%;
                         h1{
-                            font-size: 5rem;
+                            font-size: 5.5rem;
                         }
                         h2{
-                            font-size: 3.25rem;
+                            font-size: 4.25rem;
                         }
                     }
                 }
