@@ -6,61 +6,14 @@
     width: 100%;
 
     .header-container{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 1rem;
-
-        .header-img{
-            margin-top: 65px;
-            width: 100%;
-            height: 50vh;
-            margin-bottom: 1rem;
-            background: url('../images/gym-room-1180062_1280.jpg') no-repeat center center /cover;
-            max-height: 750px;
-
-            &::after{
-                content: "";
-                position: absolute;
-                margin-top: 65px;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 50vh;
-                background: rgba(0, 0, 0, 0.384) ;
-                max-height: 750px;
-            }
-        }
-
-        .header-title{
-            margin-top: 65px;
-            width: 100%;
-            height: 50vh;
-            max-height: 750px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            z-index: 3;
-            position: absolute;
-            top: 0;
-            left: 0;
-            color: #fff;
-
-            h2{
-                font-size: 3rem;
-            }
-        }
-
         .header-container-btn{
-            height: 30%;
+            height: 50%;
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 25px;
+            margin-top: 15px;
+            padding-bottom: .5rem;
             .link{
                 background: $primary-blue;
                 color: $background-light-primary;
@@ -112,31 +65,6 @@
 
 @media screen and (min-width: 375px){
     .trainers{
-        .header-container{
-            padding-bottom: 1rem;
-    
-            .header-img{
-                height: 60vh;
-                margin-bottom: 0.5rem;
-                max-height: 450px;
-    
-                &::after{
-                    height: 60vh;
-                    max-height: 450px;
-                }
-            }
-    
-            .header-title{
-                height: 60vh;
-                max-height: 450px;
-                h2{
-                    font-size: 4rem;
-                }
-            }
-    
-        }
-    
-        
         .body-container{
             margin-top: 1.5rem;
             height: 255vh;
@@ -167,31 +95,14 @@
 @media screen and (min-width: 480px){
     .trainers{
         .header-container{
-            padding-bottom: 1rem;
-    
-            .header-img{
-                height: 65vh;
-                margin-bottom: 0.5rem;
-                max-height: 550px;
-    
-                &::after{
-                    height: 65vh;
-                    max-height: 550px;
+            .header-container-btn{
+                .link{
+                    padding: 20px 40px;
+                    border-radius: 25px;
+                    font-size: 2rem;
                 }
             }
-    
-            .header-title{
-                height: 65vh;
-                max-height: 550px;
-                h2{
-                    width: 80%;
-                    font-size: 4.25rem;
-                }
-            }
-    
         }
-    
-        
         .body-container{
             margin-top: 2rem;
             height: 255vh;
@@ -225,32 +136,7 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
-    .trainers{
-        .header-container{
-            padding-bottom: 1rem;
-    
-            .header-img{
-                height: 65vh;
-                margin-bottom: 2rem;
-                max-height: 650px;
-    
-                &::after{
-                    height: 65vh;
-                    max-height: 650px;
-                }
-            }
-    
-            .header-title{
-                height: 65vh;
-                max-height: 650px;
-                h2{
-                    font-size: 6rem;
-                }
-            }
-    
-        }
-    
-        
+    .trainers{ 
         .body-container{
             margin-top: 3rem;
             height: 255vh;

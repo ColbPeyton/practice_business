@@ -4,6 +4,8 @@ import {NavLink} from "react-router-dom";
 
 
 import gymImages from '../_data/gymData';
+import HeaderImage from '../components/HeaderImage';
+import headerImage from '../images/weights.jpg';
 
 import '../styles/Services.scss';
 
@@ -21,12 +23,7 @@ function Services(){
     return(
         <main className='services'>
             <div className='services-container'>
-                <div className='header-img'>
-
-                </div>
-                <div className='header-title'>
-                    <h2>We Got The Goods</h2>
-                </div>
+                <HeaderImage image={headerImage} title='We Got The Goods' />
                 <div className='body-container'>
                 <div className='body-about'>
                         <h3>Let's Lift</h3>

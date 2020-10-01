@@ -2,6 +2,8 @@ import React from 'react';
 import {NavLink} from "react-router-dom";
 
 import TrainerProfile from './TrainerProfile';
+import HeaderImage from '../components/HeaderImage';
+import headerImage from '../images/gym-room-1180062_1280.jpg';
 
 import trainerImages from '../_data/trainerData';
 
@@ -18,12 +20,7 @@ function Trainers(){
     return(
         <div className='trainers'>
             <div className='header-container'>
-                <div className='header-img'>
-
-                </div>
-                <div className='header-title'>
-                    <h2>We're Here To Help</h2>
-                </div>
+            <HeaderImage image={headerImage} title={`We're Here To Help`}/>
                 <div className='header-container-btn'>
                         <NavLink className='link' to='/appointment'>
                             <p>Let's Get Started</p>
