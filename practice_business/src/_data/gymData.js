@@ -24,6 +24,11 @@ const gymImages = [
         thumb: imagesThumb[3],
         alt: 'Weight Room Open Floor'
     },
+    {
+        img: images[4],
+        thumb: imagesThumb[4],
+        alt: 'Full Boxing Ring'
+    },
 ];
 
 export default gymImages;

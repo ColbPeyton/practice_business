@@ -26,7 +26,9 @@ function Services(){
                 <HeaderImage image={headerImage} title='We Got The Goods' />
                 <div className='body-container'>
                 <div className='body-about'>
+                    <div className='about-title'>
                         <h3>Let's Lift</h3>
+                    </div>
                         <p>We have the equipment, space, and trainers to create the motivation to get you into the best shape of your life.</p>
                     </div>
                     <div className='body-information'>
@@ -47,6 +49,9 @@ function Services(){
                             <p>We understand that working out is a personal thing. Take your time in the private Weight room</p>
                         </div>
                     </div>
+                    <div className='body-image-title'>
+                        <h2>A Look Inside</h2>
+                    </div>
                 <SRLWrapper className='body-images'>
                     {assignImages()}
                 </SRLWrapper>
@@ -58,7 +63,7 @@ function Services(){
                         </div>
                         <div className='button-container'>
                             <NavLink className='link' to='/appointment'>
-                                <p>Let's Get To Work</p>
+                                <p>Plan A Visit</p>
                             </NavLink>
                         </div>
                     </div>
