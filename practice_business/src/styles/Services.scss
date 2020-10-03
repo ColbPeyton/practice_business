@@ -177,9 +177,10 @@
             .body-container{
                 margin-top: 1rem;
                 width: 100%;
-                height: 350vh;
-                max-height: 1850px;
-    
+                height: 400vh;
+                min-height: 1750px;
+                max-height: 1950px;
+                margin-bottom: 1rem;
                 .body-about{
                     height: 15%;
                     max-height: 250px;
@@ -228,9 +229,10 @@
                     }
                 }
                 .body-image-title + div:last-child{
-                    height: 165vh;
+                    height: 150vh;
                     background: $background-light-secondary;
-                    max-height: 1750px;
+                    min-height: 1025px;
+                    max-height: 1350px;
                     width: 100%;
                     display: flex;
                     justify-content: center;
@@ -240,6 +242,8 @@
                         a{
                             width: 100%;
                             img{
+                                max-height: 200px;
+                                margin-top: 5px;
                                 width: 100%;
                             }
                         }
@@ -251,8 +255,8 @@
                 height: 40vh;
                 max-height: 250px;
                 padding-bottom: 60px;
-                margin-top: 2rem;
-                padding-top: 1rem;
+                margin-top: 0rem;
+                padding-top: 0rem;
     
                 .footer-tagline{
                     height: 50%;
@@ -308,6 +312,7 @@
                 margin-top: 1rem;
                 width: 100%;
                 height: 375vh;
+                min-height: 900px;
                 max-height: 1250px;
     
                 .body-about{
@@ -361,7 +366,8 @@
                 .body-image-title + div:last-child{
                     height: 150vh;
                     background: $background-light-secondary;
-                    max-height: 500px;
+                    min-height: 350px;
+                    max-height: 475px;
                     width: 100%;
                     display: flex;
                     justify-content: center;
@@ -380,6 +386,7 @@
                                 }
                             }
                             img{
+                                max-height: 100%;
                                 width: 50%;
                                 padding: 5px 5px 0;
                             }
@@ -389,7 +396,7 @@
             .footer-container{
                 width: 100%;
                 height: 60vh;
-                max-height: 350px;
+                max-height: 250px;
                 padding-bottom: 60px;
                 padding-top: 0rem;
                 margin-top: 1rem;
@@ -447,7 +454,7 @@
                 margin-top: 1rem;
                 width: 100%;
                 height: 350vh;
-                max-height: 1550px;
+                max-height: 1250px;
     
                 .body-about{
                     height: 15%;
@@ -500,7 +507,8 @@
                 .body-image-title + div:last-child{
                     height: 160vh;
                     background: $background-light-secondary;
-                    max-height: 1500px;
+                    min-height: 250px;
+                    max-height: 500px;
                     width: 100%;
                     display: flex;
                     justify-content: center;
@@ -588,6 +596,7 @@
                 margin-top: 1rem;
                 width: 100%;
                 height: 350vh;
+                min-height: 1200px;
                 max-height: 1500px;
     
                 .body-about{
@@ -642,6 +651,7 @@
                 .body-image-title + div:last-child{
                     height: 100vh;
                     background: $background-light-secondary;
+                    min-height: 500px;
                     max-height: 700px;
                     width: 100%;
                     display: flex;
