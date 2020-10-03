@@ -6,6 +6,8 @@ import {
   NavLink
 } from "react-router-dom";
 
+import ScrollToTop from './components/ScrollToTop';
+
 import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
@@ -51,6 +53,7 @@ function App() {
     <div className="App">
     <SimpleReactLightbox>
         <Router >
+          <ScrollToTop />
           <Header routes={routes} width={width}/>
                 <Switch>
                   <Route component={About} path="/about" />
