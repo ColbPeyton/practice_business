@@ -6,6 +6,8 @@ import BottomScreenInfo from './BottomScreenInfo';
 
 import DropDownData from '../_data/DropDownData';
 
+import sideImage from '../images/z_gym4.png';
+
 import '../styles/Home.scss';
 
 function Home(props){
@@ -60,7 +62,13 @@ function Home(props){
                     <div className='classes-title'>
                         <h2>Classes</h2>
                     </div>
-                <DropDownContainer data={DropDownData}/>
+                <div className='classes-image-container'>
+                    <DropDownContainer data={DropDownData}/>
+                    <div className='classes-image'>
+                        <img src={sideImage} alt='Man punching' />
+                    </div>
+                </div>
+                
                 </div>
                 <div className='bottom-info'>
                     <BottomScreenInfo />
