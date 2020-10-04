@@ -45,7 +45,7 @@
             color: #fff;
             text-align: center;
             font-size: 1.5rem;
-            font-weight: 100;
+            font-weight: 500;
             margin-bottom: 1rem;
         }
         .trainer-profiles{
@@ -70,13 +70,7 @@
             height: 255vh;
             max-height: 1650px;
             .contact{
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 height: 75px;
-                background-color: $primary-red;
-                color: #fff;
-                text-align: center;
                 font-size: 1.75rem;
                 font-weight: 100;
                 margin-bottom: 1rem;
@@ -108,22 +102,16 @@
             height: 255vh;
             max-height: 1700px;
             .contact{
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 height: 75px;
-                background-color: $primary-red;
-                color: #fff;
-                text-align: center;
                 font-size: 1.75rem;
-                font-weight: 100;
+                font-weight: 500;
                 margin-bottom: 1rem;
             }
             .trainer-profiles{
                 width: 100%;
                 height: 250vh;
                 max-height: 1650px;
-                padding-bottom: 6rem;
+                padding-bottom: 7rem;
             }
         }
     }
@@ -139,18 +127,12 @@
     .trainers{ 
         .body-container{
             margin-top: 3rem;
-            height: 255vh;
-            max-height: 2100px;
+            height: 260vh;
+            max-height: 2150px;
             .contact{
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 height: 100px;
-                background-color: $primary-red;
-                color: #fff;
-                text-align: center;
                 font-size: 2.25rem;
-                font-weight: 100;
+                font-weight: 500;
                 margin-bottom: 1rem;
             }
             .trainer-profiles{
@@ -173,104 +155,29 @@
     
  }
 
-//  .trainers{
-//     height: 100%;
-//     width: 100%;
-//     overflow:hidden;
-
-//     .header-container{
-//         width: 100%;
-//         height: 100%;
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         padding-bottom: 1rem;
-
-//         .header-img{
-//             margin-top: 65px;
-//             width: 100%;
-//             height: 70vh;
-//             margin-bottom: 0.5rem;
-//             background: url('../images/gym-room-1180062_1280.jpg') no-repeat center center /cover;
-//             max-height: 750px;
-
-//             &::after{
-//                 content: "";
-//                 position: absolute;
-//                 margin-top: 65px;
-//                 top: 0;
-//                 left: 0;
-//                 width: 100%;
-//                 height: 70vh;
-//                 background: rgba(0, 0, 0, 0.384) ;
-//                 max-height: 750px;
-//             }
-//         }
-
-//         .header-title{
-//             width: 100%;
-//             height: 20vh;
-//             margin-top: 25vh;
-//             max-height: 300px;
-//             display: flex;
-//             justify-content: center;
-//             align-items: center;
-//             text-align: center;
-//             z-index: 3;
-//             position: absolute;
-//             color: #fff;
-
-//             h2{
-//                 font-size: 4rem;
-//             }
-//         }
-
-//         .header-container-btn{
-//             height: 30%;
-//             width: 100%;
-//             display: flex;
-//             justify-content: center;
-//             align-items: center;
-//             margin-top: 25px;
-//             .link{
-//                 background: $primary-blue;
-//                 color: $background-light-primary;
-//                 padding: 15px 30px;
-//                 border-radius: 25px;
-//                 font-size: 23px;
-//                 display: flex;
-//                 justify-content: center;
-//                 align-items: center;
-//                 p{
-//                     text-align: center;
-//                     text-transform: uppercase;
-//                 }
-//             }
-//         }
-//     }
-
-    
-//     .body-container{
-//         margin-top: 3rem;
-//         height: 160vh;
-//         max-height: 1600px;
-//         .contact{
-//             display: flex;
-//             justify-content: center;
-//             align-items: center;
-//             height: 100px;
-//             background-color: $primary-red;
-//             color: #fff;
-//             text-align: center;
-//             font-size: 2rem;
-//             font-weight: 100;
-//             margin-bottom: 1rem;
-//         }
-//         .trainer-profiles{
-//             width: 100%;
-//             height: 150vh;
-//             max-height: 1600px;
-//             padding-bottom: 5rem;
-//         }
-//     }
-// }
+// Mobile Landscape Devices
+@media(min-width: 568px) and (max-height: 450px){
+    .trainers{
+        .header-container{
+            .header-container-btn{
+                .link{
+                    padding: 15px 30px;
+                    font-size: 1.75rem;
+                }
+            }
+        }
+        .body-container{
+            height: 500vh;
+            max-height: 1500px;
+            .contact{
+                height: 75px;
+                font-size: 2.25rem;
+            }
+            .trainer-profiles{
+                height: 500vh;
+                max-height: 1500px;
+                padding-bottom: 1rem;
+            }
+        }
+    }
+}
