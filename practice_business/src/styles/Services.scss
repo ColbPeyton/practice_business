@@ -601,12 +601,19 @@
                 .body-image-title + div:last-child{
                     height: 100vh;
                     min-height: 500px;
-                    max-height: 550px;     
+                    max-height: 550px;    
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
                         a{
-                            width: 25%;
+                            width: 50%;
                             border-bottom: 5px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
                             &:last-of-type{
-                                   width: 100%;
+                                   width: 50%;
                                    display: flex;
                                    justify-content: center;
                                    align-items: center;
@@ -614,8 +621,8 @@
                                 }
                             }
                             img{
-                                width: 50%;
-                                padding: 5px 5px 0;
+                                width: 95%;
+                                padding: 5px 0;
                             }
                         }
 
