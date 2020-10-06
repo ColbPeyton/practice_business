@@ -56,7 +56,7 @@ function App() {
           <ScrollToTop />
           <Header routes={routes} width={width}/>
                 <Switch>
-                  <Route component={About} path="/about" />
+                  <Route component={() => <About width={width} />} path="/about" />
                   <Route component={Services} path="/services" />
                   <Route component={Appointment} path="/appointment" />
                   <Route component={Trainers} path="/trainers" />
