@@ -41,6 +41,104 @@ function About(props){
                         </p>
                     </div>
                 </div>
+                <div className='timeline'>
+                    <div className='timeline-title'>
+                        <h2>Timeline</h2>
+                    </div>
+                    <div className='timeline-container'>
+                        <div className='timeline-info'>
+                            <div className='timeline-date'>
+                                <h4>1991</h4>
+                            </div>
+                            <div className='timeline-line'></div>
+                            <div className='timeline-data'>
+                                <p>Power Fitness Business District Opens</p>
+                            </div>
+                        </div>
+                        <div className='timeline-info even'>
+                        <div className='timeline-data'>
+                                <p>Voted NOLA's Best New Gym</p>
+                            </div>
+                            <div className='timeline-line'></div>
+                            <div className='timeline-date'>
+                                <h4>1993</h4>
+                            </div>
+
+                        </div>
+                        <div className='timeline-info'>
+                            <div className='timeline-date'>
+                                <h4>1996</h4>
+                            </div>
+                            <div className='timeline-line'></div>
+                            <div className='timeline-data'>
+                                <p>Power Fitness French Quarter Opens</p>
+                            </div>
+                        </div>
+                        <div className='timeline-info even'>
+                        <div className='timeline-data'>
+                                <p>Added Kickboxing & Muay Thai Classes</p>
+                            </div>
+                            <div className='timeline-line'></div>
+                            <div className='timeline-date'>
+                                <h4>1997</h4>
+                            </div>
+                        </div>
+                        <div className='timeline-info'>
+                            <div className='timeline-date'>
+                                <h4>1999</h4>
+                            </div>
+                            <div className='timeline-line'></div>
+                            <div className='timeline-data'>
+                                <p>Constructed Full Boxing Ring At Both Locations</p>
+                            </div>
+                        </div>
+                        <div className='timeline-info even'>
+                        <div className='timeline-data'>
+                                <p>Added Crossfit, Pound, & HIIT classes</p>
+                            </div>
+                            <div className='timeline-line'></div>
+                            <div className='timeline-date'>
+                                <h4>2002</h4>
+                            </div>
+                        </div>
+                        <div className='timeline-info'>
+                            <div className='timeline-date'>
+                                <h4>2006</h4>
+                            </div>
+                            <div className='timeline-line'></div>
+                            <div className='timeline-data'>
+                                <p>Constructed Private Weight Room & Crossfit Arena At Frech Quater Location</p>
+                            </div>
+                        </div>
+                        <div className='timeline-info even'>
+                        <div className='timeline-data'>
+                                <p>Awarded NOLA's Friendliest Gym</p>
+                            </div>
+                            <div className='timeline-line'></div>
+                            <div className='timeline-date'>
+                                <h4>2009</h4>
+                            </div>
+                        </div>
+                        <div className='timeline-info'>
+                            <div className='timeline-date'>
+                                <h4>2015</h4>
+                            </div>
+                            <div className='timeline-line'></div>
+                            <div className='timeline-data'>
+                                <p>Constructed Second Weight Room At Both Locations</p>
+                            </div>
+                        </div>
+                        <div className='timeline-info even'>
+                        <div className='timeline-data'>
+                                <p>Currently Constructing Yoga Zone At Business District Location</p>
+                            </div>
+                            <div className='timeline-line'></div>
+                            <div className='timeline-date'>
+                                <h4>2020</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className='bottom-info'>
                     <BottomScreenInfo />
                 </div>
