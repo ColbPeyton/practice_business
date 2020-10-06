@@ -24,7 +24,7 @@ function About(props){
                         <div className='body-info'>
                             <p>
                                 Founded in the early 90s. Our Man Pat wanted to create a gym where everyone was accepted and
-                                can work out without judgement. He wanted to put the Power back in to the gym where all is welcome.
+                                can work out without judgement. He wanted to put the Power back in to the gym.
                             </p>
                         </div>
                     </div>
@@ -32,7 +32,7 @@ function About(props){
                         <p>
                         &emsp;Pat has been in the gym his entire life. After years of managing a bix box gym he saw
                             the issues with their form of a judgement free zone. In 1991, Pat decided enough was enough and 
-                            openened the doors to Power Gym in beautiful downtown New Orleans. 
+                            opened the doors to Power Gym in beautiful downtown New Orleans. 
                         </p>
                         <p>
                         &emsp; Open all day everyday, Power Fitness has the equipment, classes, people, and location to set
