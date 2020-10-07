@@ -1,6 +1,8 @@
 import React from 'react';
 
 import HeaderImage from './HeaderImage';
+import BottomScreenInfo from './BottomScreenInfo';
+import Form from './Form';
 
 import headerImage from '../images/appointmentHeader.jpg';
 import '../styles/Appointment.scss';
@@ -18,10 +20,10 @@ function Appointment(props){
                     
                 </div>
                 <div className='appointment-body'>
-
+                <Form />
                 </div>
-                <div className='appointment-footer'>
-
+                <div className='bottom-info'>
+                    <BottomScreenInfo />
                 </div>
             </div>
         </main>

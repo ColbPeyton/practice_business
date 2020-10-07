@@ -138,10 +138,11 @@ function About(props){
                             </div>
                         </div>
                     </div>
+                    <div className='bottom-info'>
+                        <BottomScreenInfo />
+                    </div>
                 </div>
-                <div className='bottom-info'>
-                    <BottomScreenInfo />
-                </div>
+
             </div>
         </main>
     );
