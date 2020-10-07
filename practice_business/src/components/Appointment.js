@@ -1,14 +1,23 @@
-import React from 'react';
+import React,{useState} from 'react';
 
 import HeaderImage from './HeaderImage';
 import BottomScreenInfo from './BottomScreenInfo';
-import Form from './Form';
+import Form_Gym from './Form_Gym';
+import Form_Trainer from './Form_Trainer';
 
 import headerImage from '../images/appointmentHeader.jpg';
 import '../styles/Appointment.scss';
 
 
 function Appointment(props){
+    const [gymForm, setGymForm] = useState(true);
+
+    function renderForm(){
+        return gymForm 
+        ? <Form_Gym type={'gym'}/>
+        : <Form_Trainer type={'trainer'}/>;
+    }
+    
     return(
         <main className='appointment'>
             <div className={`appointment-container ${props.width <= 1024 ? 'small' : 'large' }`}>
@@ -17,10 +26,22 @@ function Appointment(props){
                     <div className='header-tagline'>
                         <h2>Fill Out The Form Below</h2>
                     </div>
-                    
+
+                <div className='form-buttons'>
+                    <button 
+                        className={`form-selector top ${gymForm ? 'active' : ''}`}
+                        onClick={()=> setGymForm(true)}
+                        >Gym Visit
+                    </button>
+                    <button 
+                        className={`form-selector bottom ${gymForm ? '' : 'active'}`}
+                        onClick={()=> setGymForm(false)}
+                        >Trainer Appointment
+                    </button>
+                </div>
                 </div>
                 <div className='appointment-body'>
-                <Form />
+                    {renderForm()}
                 </div>
                 <div className='bottom-info'>
                     <BottomScreenInfo />

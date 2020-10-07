@@ -1,6 +1,8 @@
 import React from 'react';
 
-class Form extends React.Component{
+import '../styles/Form_Gym.scss';
+
+class Form_Gym extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -8,9 +10,17 @@ class Form extends React.Component{
             lName : '',
             date : '',
             goal : '',
+            loaded: false
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    componentDidMount(){
+        this.setState({loaded: true})
+    }
+    componentWillUnmount(){
+        this.setState({loaded:false})
     }
 
 
@@ -22,10 +32,11 @@ class Form extends React.Component{
         event.preventDefault();
     }
 
+
     render(){
         return(
             <form onSubmit={this.handleSubmit}>
-                <div className='form-container'>
+                <div className='form-container gym' style={ {animation: `${this.loaded ? "" : "slideIn"} 0.5s forwards`}}>
                     <div className='form-title'>
                         <h1>Gym Visit</h1>
                     </div>
@@ -49,9 +60,10 @@ class Form extends React.Component{
                         <input type='submit'/>
                     </div>
                 </div>
+        )
             </form>
         )
     }
 }
 
-export default Form;
+export default Form_Gym;

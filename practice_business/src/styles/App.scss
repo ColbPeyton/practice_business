@@ -4,6 +4,10 @@
     overflow: hidden;
     button:focus{outline: none;}
 
+    button{
+        cursor: pointer;
+    }
+
     .link{
         text-decoration: none;
         &:visited{
