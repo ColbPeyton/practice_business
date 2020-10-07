@@ -58,7 +58,7 @@ function App() {
                 <Switch>
                   <Route component={() => <About width={width} />} path="/about" />
                   <Route component={Services} path="/services" />
-                  <Route component={Appointment} path="/appointment" />
+                  <Route component={() => <Appointment width={width} />} path="/appointment" />
                   <Route component={Trainers} path="/trainers" />
                   <Route exact component={() => <Home width={width} /> } path="/"/>
                   <Route component={Page404} />
