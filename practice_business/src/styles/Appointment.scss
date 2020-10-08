@@ -72,15 +72,224 @@
 
             .appointment-body{
                 width: 100%;
-                height: 75vh;
+                height: 80vh;
+                max-height: 500px;
             }
             
             .bottom-info{
                 width: 100%;
                 height: 40vh;
+                max-height: 230px;
             }
 
 
         }
     }
 }
+
+
+
+@media screen and (min-width: 375px){
+    .appointment{
+        .appointment-container{
+            &.small{
+                .appointment-header{
+                    .header-tagline{
+                        height: 100px;
+                        h2{
+                            width: 90%;
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
+    
+                .form-buttons{
+                    height: 25vh;
+                    max-height: 175px;
+                    .form-selector{
+                        width: 95%;
+                        height: 45%;
+                        max-height: 75px;
+                        font-size: 1.9rem;
+                    }
+                }
+    
+                .appointment-body{
+                    margin: 0 auto;
+                    width: 95%;
+                    height: 80vh;
+                    max-height: 475px;
+                }
+                
+                .bottom-info{
+                    width: 100%;
+                    height: 40vh;
+                    max-height: 230px;
+                }
+    
+    
+            }
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 480px){
+    .appointment{
+        .appointment-container{
+            &.small{
+                .appointment-header{
+                    .header-tagline{
+                        height: 100px;
+                        h2{
+                            width: 90%;
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
+    
+                .form-buttons{
+                    height: 25vh;
+                    max-height: 175px;
+                    .form-selector{
+                        width: 95%;
+                        height: 45%;
+                        max-height: 75px;
+                        font-size: 1.9rem;
+                    }
+                }
+    
+                .appointment-body{
+                    margin: 0 auto;
+                    width: 80%;
+                    height: 80vh;
+                    max-height: 475px;
+                }
+                
+                .bottom-info{
+                    width: 100%;
+                    height: 40vh;
+                    max-height: 230px;
+                }
+    
+    
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+
+ 
+
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    .appointment{
+        .appointment-container{
+            &.small{
+                .appointment-header{
+                    .header-tagline{
+                        height: 100px;
+                        h2{
+                            width: 80%;
+                            font-size: 3.25rem;
+                        }
+                    }
+                }
+    
+                .form-buttons{
+                    height: 25vh;
+                    max-height: 200px;
+                    .form-selector{
+                        width: 95%;
+                        height: 45%;
+                        max-height: 90px;
+                        font-size: 2.25rem;
+                    }
+                }
+    
+                .appointment-body{
+                    margin: 0 auto;
+                    width: 65%;
+                    height: 80vh;
+                    max-height: 575px;
+                }
+                
+                .bottom-info{
+                    width: 100%;
+                    height: 45vh;
+                    max-height: 250px;
+                }
+    
+    
+            }
+        }
+    }
+ 
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    
+ }
+
+
+
+
+
+// Mobile Devices
+ @media(min-width: 568px) and (max-height: 414px){
+    .appointment{
+        .appointment-container{
+            &.small{
+                .appointment-header{
+                    .header-tagline{
+                        height: 75px;
+                        h2{
+                            width: 90%;
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
+    
+                .form-buttons{
+                    height: 45vh;
+                    max-height: 225px;
+                    .form-selector{
+                        width: 95%;
+                        height: 45%;
+                        max-height: 75px;
+                        font-size: 1.9rem;
+                    }
+                }
+    
+                .appointment-body{
+                    margin: 0 auto;
+                    width: 70%;
+                    height: 200vh;
+                    max-height: 550px;
+                }
+                
+                .bottom-info{
+                    width: 100%;
+                    height: 75vh;
+                    max-height: 230px;
+                }
+    
+    
+            }
+        }
+    }
+ }
+
+
+

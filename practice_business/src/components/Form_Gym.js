@@ -36,7 +36,7 @@ class Form_Gym extends React.Component{
     render(){
         return(
             <form onSubmit={this.handleSubmit}>
-                <div className='form-container gym' style={ {animation: `${this.loaded ? "" : "slideIn"} 0.5s forwards`}}>
+                <div className='form-container gym' style={ {animation: `${this.loaded ? "" : "slideIn"} 0.75s forwards`}}>
                     <div className='form-title'>
                         <h1>Gym Visit</h1>
                     </div>
@@ -66,7 +66,6 @@ class Form_Gym extends React.Component{
                         <input type='submit'/>
                     </div>
                 </div>
-        )
             </form>
         )
     }

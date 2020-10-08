@@ -62,7 +62,7 @@ class Form_Trainer extends React.Component{
     render(){
         return(
             <form onSubmit={this.handleSubmit}>
-                <div className='form-container trainer' style={ {animation: `${this.loaded ? "" : "slideInTrainer"} 0.5s forwards`}}>
+                <div className='form-container trainer' style={ {animation: `${this.loaded ? "" : "slideInTrainer"} 0.75s forwards`}}>
                     <div className='form-title'>
                         <h1>Trainer Appointment</h1>
                     </div>
