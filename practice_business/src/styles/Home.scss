@@ -265,7 +265,7 @@
                                     align-items: flex-start;
                                     padding-left: 10px;
                                     font-weight: 100;
-                                    font-size: 0.8rem;
+                                    font-size: 1rem;
 
                                     &.difficulty{
                                         text-transform: uppercase;
@@ -332,9 +332,11 @@
                 }
     
                 .home-classes{
-                    height: 140vh;
-                    max-height: 800px;
+                    height: 135vh;
+                    min-height: 850px;
+                    max-height: 900px;
                 }
+
                 .bottom-info{
                     height: 40vh;
                     max-height: 250px;
@@ -379,8 +381,9 @@
                 }
     
                 .home-classes{
-                    height: 120vh;
-                    max-height: 800px;
+                    height: 115vh;
+                    min-height: 775px;
+                    max-height: 825px;
                 }
                 .bottom-info{
                     height: 35vh;
@@ -396,6 +399,12 @@
                 .home-container-img{
                     height: 50vh;
                 }
+
+                .drop-top{
+                    height: 60px;
+                    font-size: 1.25rem;
+     
+                } 
                 
             }
         }
@@ -588,6 +597,7 @@
     
                 .home-classes{
                     height: 250vh;
+                    min-height: 750px;
                     max-height: 775px;
 
                     .classes-image-container{
