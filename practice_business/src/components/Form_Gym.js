@@ -25,7 +25,7 @@ class Form_Gym extends React.Component{
 
 
     handleChange(event) {
-        this.setState({value: event.target.value});
+        this.setState({[event.target.name] : event.target.value});
     }
     
     handleSubmit(event) {
@@ -40,20 +40,26 @@ class Form_Gym extends React.Component{
                     <div className='form-title'>
                         <h1>Gym Visit</h1>
                     </div>
-                    <div className='form-item'>
-                        <label>First Name:</label>
-                        <input placeholder='Pat' value={this.state.fName} onChange={this.handleChange}/>
+                    <div className='form-item-container'>
+                        <div className='form-item'>
+                            <label>First Name:</label>
+                            <input placeholder='Pat' value={this.state.fName} onChange={this.handleChange} name={'fName'}/>
+                        </div>
                     </div>
-                    <div className='form-item'>
-                        <label>Last Name: </label>
-                        <input placeholder='GymMan' value={this.state.lName} onChange={this.handleChange}/>
+                    <div className='form-item-container even'>
+                        <div className='form-item'>
+                            <label>Last Name: </label>
+                            <input placeholder='GymMan' value={this.state.lName} onChange={this.handleChange} name={'lName'}/>
+                        </div>
                     </div>
-                    <div className='form-item'>
-                        <label>Date of Visit: </label>
-                        <input type='date' value={this.state.fName} onChange={this.handleChange}/>
+                    <div className='form-item-container'>
+                        <div className='form-item'>
+                            <label>Date of Visit: </label>
+                            <input type='date' value={this.state.fName} onChange={this.handleChange} name={'date'}/>
+                        </div>
                     </div>
                     <div className='form-area'>
-                        <textarea placeholder='What are your goals?' value={this.state.fName} onChange={this.handleChange}/>
+                        <textarea placeholder='What are your goals?' value={this.state.goal} onChange={this.handleChange} name={'goal'}/>
                     </div>
 
                     <div className='form-submit'>

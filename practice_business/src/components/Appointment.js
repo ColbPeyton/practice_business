@@ -2,8 +2,8 @@ import React,{useState} from 'react';
 
 import HeaderImage from './HeaderImage';
 import BottomScreenInfo from './BottomScreenInfo';
-import Form_Gym from './Form_Gym';
-import Form_Trainer from './Form_Trainer';
+import FormGym from './Form_Gym';
+import FormTrainer from './Form_Trainer';
 
 import headerImage from '../images/appointmentHeader.jpg';
 import '../styles/Appointment.scss';
@@ -14,8 +14,8 @@ function Appointment(props){
 
     function renderForm(){
         return gymForm 
-        ? <Form_Gym type={'gym'}/>
-        : <Form_Trainer type={'trainer'}/>;
+        ? <FormGym type={'gym'}/>
+        : <FormTrainer type={'trainer'}/>;
     }
     
     return(
