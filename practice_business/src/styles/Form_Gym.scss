@@ -58,10 +58,17 @@ form{
                 input{
                     height: 20px;
                     max-width: 125px;
+                    font-size: 1.25;
     
                     &:focus{
-                        border: 1px solid $primary-blue;
+                        outline: 3px solid $primary-red;
                     }
+                }
+                input[type='text']{
+                    font-size: 1.15rem;
+                }
+                input[type='date']{
+                    font-size: 1.15rem;
                 }
     
 
@@ -85,9 +92,10 @@ form{
                 width: 70%;
                 height: 85%;
                 resize: none;
+                font-size: 1.1rem;
 
                 &:focus{
-                    border: 1px solid $primary-blue;
+                    outline: 3px solid $primary-red;
                 }
             }
         }
@@ -124,9 +132,10 @@ form{
                 select{
                     height: 20px;
                     width: 125px;
+                    font-size: 1.15rem;
     
                     &:focus{
-                        border: 1px solid $primary-blue;
+                        outline: 3px solid $primary-red;
                     }
                 }
             }

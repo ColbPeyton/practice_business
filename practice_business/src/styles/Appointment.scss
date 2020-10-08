@@ -43,6 +43,10 @@
                     color: #fff;
                     border: none;
 
+                    button:focus{
+                        outline: 0;
+                    }
+
 
                     &.top{
                         box-shadow: 10px 0px  $primary-red;

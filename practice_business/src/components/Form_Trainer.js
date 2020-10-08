@@ -69,19 +69,19 @@ class Form_Trainer extends React.Component{
                     <div className='form-item-container'>
                         <div className='form-item'>
                             <label>First Name:</label>
-                            <input placeholder='Pat' value={this.state.fName} onChange={this.handleChange} name={'fName'}/>
+                            <input placeholder='Pat' value={this.state.fName} onChange={this.handleChange} name={'fName'} type='text'/>
                         </div>
                     </div>
                     <div className='form-item-container even'>
                         <div className='form-item'>
                             <label>Last Name: </label>
-                            <input placeholder='GymMan' value={this.state.lName} onChange={this.handleChange} name={'lName'}/>
+                            <input placeholder='GymMan' value={this.state.lName} onChange={this.handleChange} name={'lName'} type='text'/>
                         </div>
                     </div>
                     <div className='form-item-container'>
                         <div className='form-item'>
                             <label>Date of Visit: </label>
-                            <input type='date' value={this.state.fName} onChange={this.handleChange} name={'date'}/>
+                            <input type='date' value={this.state.date} onChange={this.handleChange} name={'date'}/>
                         </div>
                     </div>
                     <div className='form-item-container even'>
