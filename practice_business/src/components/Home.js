@@ -12,9 +12,11 @@ import '../styles/Home.scss';
 
 function Home(props){
 
-    return(
-        <main className='home'>
-            <div className={`home-container ${props.width <= 1024 ? 'small' : 'large' }`}>
+
+    function smallView(){
+        return (
+            <main className='home'>
+            <div className={`home-container small`}>
                 <div className='home-container-img'>
                 </div>
                 <div className='home-container-top'>
@@ -75,6 +77,27 @@ function Home(props){
                 </div>
             </div>
         </main>
+        )
+    }
+
+    function largeView(){
+        return(
+            <main className='home'>
+            <div className={`home-container large`}>
+               
+            </div>
+        </main>
+        )
+    }
+
+    function renderScreenBasedOnSize(){
+        return props.width <= 1024
+        ? smallView()
+        : largeView();
+    }
+
+    return(
+        renderScreenBasedOnSize()
     );
 };
 
