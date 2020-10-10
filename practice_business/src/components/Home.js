@@ -7,6 +7,7 @@ import BottomScreenInfo from './BottomScreenInfo';
 import DropDownData from '../_data/DropDownData';
 
 import sideImage from '../images/z_gym4.png';
+import aboutImg from '../images/about.jpg';
 
 import '../styles/Home.scss';
 
@@ -99,8 +100,14 @@ function Home(props){
                         <p>Gym in New Orleans, LA</p>
                     </div>
                     <div className='body-about'>
-                        <h3>We Put You to Work</h3>
-                        <p>Helping the local community stay in shape for the past 30 years.</p>
+                        <div className='about-text'>
+                            <h3>We Put You to Work</h3>
+                            <p>Helping the local community stay in shape for the past 30 years.</p>
+                        </div>
+                        <div className='about-img'>
+                            <img src={aboutImg} alt='Man lifting weights' />
+                        </div>
+
                     </div>
                     <div className='body-information'>
                         <div className='info'>
