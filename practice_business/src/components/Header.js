@@ -37,16 +37,16 @@ function Header(props){
                 <div className='header-contents top'>
                     <div className='top-bar'>
                         <div className='top-info'>
-                            <button>(555)555-5555</button>
-                            <button>Request An Appointment</button>
-                            <button>Our Location</button>
+                            <button><i class="fas fa-phone"></i>  (555)555-5555</button>
+                            <button><i class="far fa-calendar-check"></i>  Request An Appointment</button>
+                            <button><i class="fas fa-map-marker-alt"></i>  Our Location</button>
                         </div>
                     </div>
                 </div>
                 <div className='header-contents bottom'>
                     <div className='bottom-bar'>
                         <div className='bottom-logo'>
-                            <button>Logo</button>
+                            <button>Power <span>Fitness</span></button>
                         </div>
                             <div className='bottom-nav'>
                                 <nav>
@@ -81,7 +81,7 @@ function Header(props){
     }
 
     function renderCorrectView(){
-        return props.width <= 1024
+        return props.width <= 991
         ? smallerView()
         : largerView()
     }
