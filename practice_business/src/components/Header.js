@@ -37,9 +37,9 @@ function Header(props){
                 <div className='header-contents top'>
                     <div className='top-bar'>
                         <div className='top-info'>
-                            <button><i class="fas fa-phone"></i>  (555)555-5555</button>
-                            <button><i class="far fa-calendar-check"></i>  Request An Appointment</button>
-                            <button><i class="fas fa-map-marker-alt"></i>  Our Location</button>
+                            <button><i className="fas fa-phone"></i>  (555)555-5555</button>
+                            <button><i className="far fa-calendar-check"></i>  Request An Appointment</button>
+                            <button><i className="fas fa-map-marker-alt"></i>  Our Location</button>
                         </div>
                     </div>
                 </div>
