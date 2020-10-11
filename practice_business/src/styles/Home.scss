@@ -363,17 +363,247 @@
                 width: 100%;
                 height: 150vh;
                 background-color: $background-light-secondary;
-                .body-tagline{
 
+                .body-tagline{
+                    width: 100%;
+                    height: 5vh;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    p{
+                        font-weight: 100;
+                        color: $primary-blue;
+                        font-size: 1.15rem;
+                    }
                 }
                 .body-about{
-                    .about-text{
-                        .about-img{
+                    width: 100%;
+                    height: 30%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    background-color: $blue-dark;
 
+                    .about-head{
+                        width: 100%;
+                        border: 3px solid #fff;
+                        height: 20%;
+                        border-bottom-left-radius: 25px;
+                        border-bottom-right-radius: 25px;
+                        background-color: #E63946;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        i{
+                            font-size: 3rem;
+                            color: #fff;
+                        }
+                    }
+
+                    
+                    .about-container{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    
+
+                        .about-text{
+                            width: 50%;
+                            height: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            text-align: left;
+                            color: #fff;
+                            padding-left: 25px;
+                            // background-color: #e63947d3;
+
+                            h3{
+                                width: 90%;
+                                font-size: 5rem;
+                                margin-bottom: 10px;
+                            }
+                            p{
+                                width: 90%;
+                                font-size: 1.75rem;
+                            }
+                            
+                        }
+                        .about-img{
+                            width: 50%;
+
+                            img{
+                                max-width: 100%;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+
+            }
+            .home-classes{
+                height: 250vh;
+                min-height: 750px;
+                max-height: 775px;
+                    .classes-title{
+                        text-align: center;
+                        padding: 2rem 0 2rem;
+                        width: 100%;
+                        height: 15vh;
+                        max-height: 100px;
+                        background-color: $primary-red;
+                        color: #fff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 1.25rem;
+                        h2{
+                            font-size: 4rem;
+                            font-weight: 500;
+                        }
+                    }
+
+                .classes-image-container{
+                    padding-top: 1rem;
+                    margin: 0 auto;
+                    position: relative;
+                    width: 95%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                }
+
+                .classes-image{
+                    height: 100%;
+                    width: 50%;
+                    min-width: 500px;
+                    max-width: 800px;
+                    display: flex;
+                    justify-content: flex-end;
+                    flex-direction: column;
+                    align-items: center;
+                    position: absolute;
+                    right: 0;
+                    bottom:0;
+
+                    img{
+                        z-index:1;
+                        max-width: 650px;
+                        height: auto;
+                        float: right;
+                    }
+                }
+
+                .drop-down-container{
+                    width: 100%;
+                    height: 60vh;
+                    padding-bottom: 1rem;
+                    z-index: 2;
+
+
+                .drop-down{
+                    margin: 0 0;
+                    height: 100px;
+                    width: 45%;
+                    border-radius: 5px;
+                    margin-bottom: 20px;
+
+                    .drop-top{
+                        align-self: flex-start;
+                        color: $background-light-primary;
+                        border: 2px solid $blue-light;
+                        background: $primary-blue;
+                        transition: all 0.15s ease-in-out;
+
+                        border-radius: 5px;
+                        margin: 0 auto;
+                        width: 100%;
+                        height: 50px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        z-index: 2;
+
+                        h3{
+                            padding-left: 10px;
+                        }
+                        i{
+                            padding-right: 10px;
+                        }
+                    }
+                    .drop-bot{
+                        opacity: 0;
+                        transition: all 0.45s ease-in-out;
+                        height: 50px;
+
+                        p{
+                            display: none;
+                        }
+                    }
+
+                    &.active{
+                        height: 175px;
+
+                        .drop-top{
+                            background: $primary-red;
+                            border-bottom: 3px solid transparent;
+                        }
+            
+                        .drop-bot{
+                            opacity: 1;
+                            position: relative;
+                            background: $background-light-secondary;
+                            min-height: 125px;
+                            max-height: 150px;
+                            padding-top: 1rem;
+                            width: 99%;
+                            margin: 0  auto;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            flex-direction: column;
+
+                            border: 2px solid $blue-light;
+                            border-top: none;
+                            border-bottom-left-radius: 5px;
+                            border-bottom-right-radius: 5px;
+
+                            p{
+                                display: flex;
+                                height: 20%;
+                                width: 90%;
+                                justify-content: flex-start;
+                                align-items: flex-start;
+                                padding-left: 10px;
+                                font-weight: 100;
+                                font-size: 1rem;
+
+                                &.difficulty{
+                                    text-transform: uppercase;
+                                    font-weight: 600;
+                                    padding-bottom: 5px;
+                                    font-size: 1rem;
+                                }
+
+                                &.advanced{
+                                    color: $primary-red;
+                                }
+
+                                &.beginner{
+                                    color: green;
+                                }
+                            }
                         }
                     }
                 }
             }
+        }
         }
     }
 }

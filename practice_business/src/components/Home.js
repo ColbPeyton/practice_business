@@ -100,14 +100,19 @@ function Home(props){
                         <p>Gym in New Orleans, LA</p>
                     </div>
                     <div className='body-about'>
-                        <div className='about-text'>
-                            <h3>We Put You to Work</h3>
-                            <p>Helping the local community stay in shape for the past 30 years.</p>
+                        <div className='about-head'>
+                            <i className="fas fa-angle-down"></i>
                         </div>
-                        <div className='about-img'>
-                            <img src={aboutImg} alt='Man lifting weights' />
+                        <div className='about-container'>
+                            <div className='about-text'>
+                                <h3>We Put You to Work</h3>
+                                <p>Helping the local community stay in shape for the past 30 years.</p>
+                            </div>
+                            <div className='about-img'>
+                                <img src={aboutImg} alt='Man lifting weights' />
+                            </div>
                         </div>
-
+                        
                     </div>
                     <div className='body-information'>
                         <div className='info'>
