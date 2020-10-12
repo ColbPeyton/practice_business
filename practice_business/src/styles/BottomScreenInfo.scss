@@ -99,7 +99,25 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { 
+    .bottom-screen{
+
+        .links{
+            width: 35%;
+            height: 50%;
+            font-size: 4rem;
+        }
     
+        .info{
+            width: 100%;
+            height: 45%;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 100;
+            p{
+                padding-bottom: 10px;
+            }
+        }
+    }
  }
 
 

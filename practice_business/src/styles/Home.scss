@@ -219,6 +219,10 @@
                             i{
                                 padding-right: 10px;
                             }
+
+                            &:hover{
+                                background-color: $primary-red;
+                            }
                         }
                         .drop-bot{
                             opacity: 0;
@@ -361,13 +365,14 @@
             }
             .home-container-body{
                 width: 100%;
-                height: 145vh;
+                height: 150vh;
                 background-color: $background-light-secondary;
                 max-height: 1500px;
+                min-height: 1450px;
 
                 .body-tagline{
                     width: 100%;
-                    height: 5vh;
+                    height: 100px;
                     text-align: center;
                     display: flex;
                     justify-content: center;
@@ -375,7 +380,7 @@
                     p{
                         font-weight: 100;
                         color: $primary-blue;
-                        font-size: 1.5rem;
+                        font-size: 1.75rem;
                     }
                 }
                 .body-about{
@@ -427,7 +432,7 @@
 
                             h3{
                                 width: 90%;
-                                font-size: 5rem;
+                                font-size: 4.75rem;
                                 margin-bottom: 10px;
                             }
                             p{
@@ -447,15 +452,13 @@
                     }
                 }
                 .info-title{
-                    margin: 2rem 0;
                     width: 100%;
-                    height: 10vh;
-                    max-height: 100px;
+                    height: 125px;
                     background-color: $primary-red;
                     color: #fff;
                     text-align: center;
                     h1{
-                        font-size: 5rem;
+                        font-size: 6rem;
                     }
                 }
                 .body-information{
@@ -497,6 +500,7 @@
             }
             .home-paralax-container{
                 height: 50vh;
+                max-height: 550px;
                 width: 100%;
                 .paralax{
                     width: 100%;
@@ -599,6 +603,10 @@
                         i{
                             padding-right: 10px;
                             font-size: 1.5rem;
+                        }
+
+                        &:hover{
+                            background-color: $primary-red;
                         }
                     }
                     .drop-bot{
@@ -925,21 +933,31 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
+    
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
     .home{
+
         .home-container{
             &.large{
                 .home-header{
                     width: 100%;
                     height: 75vh;
-                    max-height: 800px;    
+                    max-height: 800px;
+                    background: url('../images/gym/equipment_04.jpg') no-repeat center center /cover;
+    
                     .header-title{
                         width: 35%;
                         float: right;
                         max-width: 350px;
-                        margin-right: 10%;
+                        height: 100%;
+                        margin-right: 20%;
                         .title{
                             width: 100%;
                             height: 50%;
+    
                             h1{
                                 font-size: 6.15rem;
                             }
@@ -951,6 +969,7 @@
                         }
                         .header-container-btn{
                             height: 40%;
+                            width: 100%;
                             margin-top: 25px;
                             padding-bottom: .5rem;
                             .link{
@@ -958,8 +977,9 @@
                                 padding: 20px 35px;
                                 border-radius: 25px;
                                 font-size: 1.65rem;
-                                p{
 
+                                p{
+                                    font-weight: 100;
                                 }
                             }
                         }
@@ -970,10 +990,15 @@
                     width: 100%;
                     height: 150vh;
                     max-height: 1500px;
+                    min-height: 1450px;
     
                     .body-tagline{
-                        height: 10vh;
+                        background-color: $background-light-secondary;
+                        width: 100%;
+                        height: 125px;
                         p{
+                            font-weight: 100;
+                            color: $primary-blue;
                             font-size: 1.75rem;
                         }
                     }
@@ -981,19 +1006,15 @@
                         width: 100%;
                         height: 30%;
                         min-height: 615px;
+    
                         .about-head{
                             width: 100%;
                             border: 3px solid #fff;
                             height: 20%;
                             border-bottom-left-radius: 25px;
                             border-bottom-right-radius: 25px;
-                            background-color: #E63946;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
                             i{
                                 font-size: 3rem;
-                                color: #fff;
                             }
                         }
     
@@ -1001,16 +1022,15 @@
                         .about-container{
                             width: 100%;
                             height: 100%;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                        
+                            max-width: 1200px;
+                            margin: 0 auto;
     
                             .about-text{
+    
                                 h3{
-                                    width: 95%;
+                                    width: 90%;
                                     font-size: 4.75rem;
-                                    margin-bottom: 15px;
+                                    margin-bottom: 10px;
                                 }
                                 p{
                                     width: 90%;
@@ -1029,13 +1049,8 @@
                         }
                     }
                     .info-title{
-                        margin: 2rem 0;
-                        width: 100%;
-                        height: 10vh;
-                        max-height: 125px;
-                        background-color: $primary-red;
-                        color: #fff;
-                        text-align: center;
+                        width: 100vw;
+                        height: 125px;
                         h1{
                             font-size: 6rem;
                         }
@@ -1044,37 +1059,108 @@
                         height: 55vh;
                         min-height: 450px;
                         max-height: 700px;
-                        width: 75%;
+                        width: 60%;
+                        margin: 0  auto;
+    
                         .info{
                             width: 45%;
                             height: 25%;
-                            text-align: center;
                             h3{
                                 font-size: 2rem;
                             }
     
                             p{
-                                width: 85%;
                                 font-size: 1.5rem;
                             }
                         }
                     }
                     
+                }
                 .home-paralax-container{
-                    height: 30vh;
-                    width: 100%;
+                    height: 50vh;
+                    max-height: 550px;
                 }
-                
+                .home-classes{
+                    height: 250vh;
+                    min-height: 750px;
+                    max-height: 850px;
+                        .classes-title{
+                            text-align: center;
+                            padding: 2rem 0 2rem;
+                            width: 100vw;
+                            height: 15vh;
+                            max-height: 125px;
+                            margin-bottom: 1.25rem;
+                            h2{
+                                font-size: 7rem;
+                                font-weight: 500;
+                            }
+                        }
     
+                    .classes-image-container{
+                        max-width: 1100px;
+                        padding-top: 1rem;
+                        margin: 0 auto;
+                        position: relative;
+                        width: 95%;
+                        height: 100%;
+
+                    }
+    
+                    .classes-image{
+                        height: 100%;
+                        width: 50%;
+                        min-width: 500px;
+                        max-width: 800px;
+    
+                        img{
+                            z-index:-1;
+                            max-width: 750px;
+                        }
+                    }
+    
+                    .drop-down-container{
+                        width: 100%;
+                        height: 60vh;
+                        padding-bottom: 1rem;
+                        z-index: 2;
+    
+    
+                    .drop-down{
+                        margin: 0 0;
+                        height: 100px;
+                        width: 45%;
+                        border-radius: 5px;
+                        margin-bottom: 20px;
+    
+                        .drop-top{
+    
+                            h3{
+                                padding-left: 15px;
+                                font-size: 2rem;
+                            }
+                            i{
+                                padding-right: 15px;
+                                font-size: 1.5rem;
+                            }
+
+
+                        }
+                        .drop-bot{
+                            opacity: 0;
+                            transition: all 0.45s ease-in-out;
+                            height: 50px;
+    
+                            p{
+                                display: none;
+                            }
+                        }
+                    }
                 }
+            }
             }
         }
     }
- }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { 
-    
  }
 
 
