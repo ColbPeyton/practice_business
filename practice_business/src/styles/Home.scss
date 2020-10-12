@@ -943,104 +943,35 @@
         .home-container{
             &.large{
                 .home-header{
-                    width: 100%;
-                    height: 75vh;
-                    max-height: 800px;
-                    background: url('../images/gym/equipment_04.jpg') no-repeat center center /cover;
-    
                     .header-title{
-                        width: 35%;
-                        float: right;
-                        max-width: 350px;
-                        height: 100%;
                         margin-right: 20%;
-                        .title{
-                            width: 100%;
-                            height: 50%;
-    
-                            h1{
-                                font-size: 6.15rem;
-                            }
-                            h2{
-                                font-size: 4.25rem;
-                                font-weight: 300;
-                            }
-    
-                        }
-                        .header-container-btn{
-                            height: 40%;
-                            width: 100%;
-                            margin-top: 25px;
-                            padding-bottom: .5rem;
-                            .link{
 
-                                padding: 20px 35px;
-                                border-radius: 25px;
-                                font-size: 1.65rem;
-
-                                p{
-                                    font-weight: 100;
-                                }
-                            }
-                        }
                     }
     
                 }
                 .home-container-body{
-                    width: 100%;
-                    height: 150vh;
-                    max-height: 1500px;
-                    min-height: 1450px;
-    
                     .body-tagline{
                         background-color: $background-light-secondary;
                         width: 100%;
                         height: 125px;
-                        p{
-                            font-weight: 100;
-                            color: $primary-blue;
-                            font-size: 1.75rem;
-                        }
                     }
                     .body-about{
                         width: 100%;
                         height: 30%;
-                        min-height: 615px;
     
                         .about-head{
-                            width: 100%;
-                            border: 3px solid #fff;
-                            height: 20%;
-                            border-bottom-left-radius: 25px;
-                            border-bottom-right-radius: 25px;
                             i{
-                                font-size: 3rem;
+                                font-size: 4rem;
                             }
                         }
     
                         
                         .about-container{
-                            width: 100%;
-                            height: 100%;
-                            max-width: 1200px;
+                            min-width: 600px;
+                            max-width: 1100px;
                             margin: 0 auto;
-    
-                            .about-text{
-    
-                                h3{
-                                    width: 90%;
-                                    font-size: 4.75rem;
-                                    margin-bottom: 10px;
-                                }
-                                p{
-                                    width: 90%;
-                                    font-size: 1.75rem;
-                                }
-                                
-                            }
-                            .about-img{
-                                width: 50%;
-    
+
+                            .about-img{    
                                 img{
                                     max-width: 100%;
                                     height: auto;
@@ -1050,51 +981,23 @@
                     }
                     .info-title{
                         width: 100vw;
-                        height: 125px;
-                        h1{
-                            font-size: 6rem;
-                        }
                     }
                     .body-information{
-                        height: 55vh;
                         min-height: 450px;
                         max-height: 700px;
                         width: 60%;
+                        max-width: 1100px;
+                        min-width: 850px;
                         margin: 0  auto;
-    
-                        .info{
-                            width: 45%;
-                            height: 25%;
-                            h3{
-                                font-size: 2rem;
-                            }
-    
-                            p{
-                                font-size: 1.5rem;
-                            }
-                        }
                     }
-                    
                 }
                 .home-paralax-container{
-                    height: 50vh;
-                    max-height: 550px;
+                    height: 65vh;
+                    max-height: 650px;
                 }
                 .home-classes{
-                    height: 250vh;
-                    min-height: 750px;
-                    max-height: 850px;
                         .classes-title{
-                            text-align: center;
-                            padding: 2rem 0 2rem;
                             width: 100vw;
-                            height: 15vh;
-                            max-height: 125px;
-                            margin-bottom: 1.25rem;
-                            h2{
-                                font-size: 7rem;
-                                font-weight: 500;
-                            }
                         }
     
                     .classes-image-container{
@@ -1106,58 +1009,124 @@
                         height: 100%;
 
                     }
-    
                     .classes-image{
-                        height: 100%;
-                        width: 50%;
-                        min-width: 500px;
-                        max-width: 800px;
-    
                         img{
                             z-index:-1;
-                            max-width: 750px;
                         }
                     }
+                } 
+            }
+        }
+    }
+ }
+
+ @media (min-width: 2000px) { 
+    .home{
+
+        .home-container{
+            &.large{
+                .home-header{
+                    .header-title{
+                        margin-right: 25%;
+
+                    }
     
+                }
+                .home-container-body{
+                    .body-tagline{
+                        width: 100%;
+                        height: 150px;
+                    }
+                    .body-about{
+                        width: 100%;
+                        height: 30%;
+    
+                        .about-head{
+                            i{
+                                font-size: 4rem;
+                            }
+                        }
+    
+                        
+                        .about-container{
+                            max-width: 1200px;
+                            margin: 0 auto;
+
+                            .about-img{    
+                                img{
+                                    max-width: 100%;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                    .info-title{
+                        width: 100vw;
+                    }
+                    .body-information{
+                        min-height: 550px;
+                        max-height: 600px;
+                        width: 60%;
+                        max-width: 1200px;
+                        min-width: 850px;
+                        margin: 0  auto;
+
+                        .info{
+                            h3{
+                                font-size: 3rem;
+                            }
+                            p{
+                                font-size: 1.75rem;
+                            }
+                        }
+                    }
+                }
+                .home-paralax-container{
+                    height: 65vh;
+                    max-height: 700px;
+                }
+                .home-classes{
+                        .classes-title{
+                            width: 100vw;
+                            height: 20vh;
+                            max-height: 150px;
+
+                            h2{
+                                font-size: 8rem;
+                            }
+                        }
+    
+                    .classes-image-container{
+                        max-width: 1200px;
+                        padding-top: 1rem;
+                        margin: 0 auto;
+                        position: relative;
+                        width: 95%;
+                        height: 100%;
+
+                    }
+                    .classes-image{
+                        img{
+                            z-index:-1;
+                        }
+                    }
+
                     .drop-down-container{
                         width: 100%;
-                        height: 60vh;
+                        height: 70vh;
                         padding-bottom: 1rem;
                         z-index: 2;
     
     
                     .drop-down{
-                        margin: 0 0;
-                        height: 100px;
-                        width: 45%;
-                        border-radius: 5px;
-                        margin-bottom: 20px;
-    
                         .drop-top{
-    
                             h3{
-                                padding-left: 15px;
-                                font-size: 2rem;
+                                font-size: 2.75rem;
                             }
-                            i{
-                                padding-right: 15px;
-                                font-size: 1.5rem;
-                            }
-
-
                         }
-                        .drop-bot{
-                            opacity: 0;
-                            transition: all 0.45s ease-in-out;
-                            height: 50px;
-    
-                            p{
-                                display: none;
-                            }
                         }
                     }
-                }
-            }
+                } 
             }
         }
     }
