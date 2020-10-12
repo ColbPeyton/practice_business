@@ -1,7 +1,6 @@
 import React,{useState} from 'react';
 
 import HeaderImage from './HeaderImage';
-import BottomScreenInfo from './BottomScreenInfo';
 import FormGym from './Form_Gym';
 import FormTrainer from './Form_Trainer';
 
@@ -42,9 +41,6 @@ function Appointment(props){
                 </div>
                 <div className='appointment-body'>
                     {renderForm()}
-                </div>
-                <div className='bottom-info'>
-                    <BottomScreenInfo />
                 </div>
             </div>
         </main>

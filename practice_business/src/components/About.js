@@ -1,7 +1,6 @@
 import React from 'react';
 
 import HeaderImage from './HeaderImage';
-import BottomScreenInfo from './BottomScreenInfo';
 import headerImage from '../images/building.jpg';
 import owner from '../images/ownerAbout.jpg';
 
@@ -137,9 +136,6 @@ function About(props){
                                 <h4>2020</h4>
                             </div>
                         </div>
-                    </div>
-                    <div className='bottom-info'>
-                        <BottomScreenInfo />
                     </div>
                 </div>
 

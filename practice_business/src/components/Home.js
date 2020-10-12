@@ -2,7 +2,6 @@ import React from 'react';
 import {NavLink} from "react-router-dom";
 
 import DropDownContainer from './DropDownContainer';
-import BottomScreenInfo from './BottomScreenInfo';
 
 import DropDownData from '../_data/DropDownData';
 
@@ -73,9 +72,7 @@ function Home(props){
                 </div>
                 
                 </div>
-                <div className='bottom-info'>
-                    <BottomScreenInfo />
-                </div>
+
             </div>
         </main>
         )
@@ -114,6 +111,7 @@ function Home(props){
                         </div>
                         
                     </div>
+                    <div className='info-title'><h1>What We Offer</h1></div>
                     <div className='body-information'>
                         <div className='info'>
                             <h3>Always Available</h3>
@@ -148,9 +146,7 @@ function Home(props){
                 </div>
                 
                 </div>
-                <div className='bottom-info'>
-                    <BottomScreenInfo />
-                </div>
+
             </div>
         </main>
         )

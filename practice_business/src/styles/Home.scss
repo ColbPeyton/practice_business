@@ -361,8 +361,9 @@
             }
             .home-container-body{
                 width: 100%;
-                height: 150vh;
+                height: 145vh;
                 background-color: $background-light-secondary;
+                max-height: 1500px;
 
                 .body-tagline{
                     width: 100%;
@@ -374,12 +375,13 @@
                     p{
                         font-weight: 100;
                         color: $primary-blue;
-                        font-size: 1.15rem;
+                        font-size: 1.5rem;
                     }
                 }
                 .body-about{
                     width: 100%;
                     height: 30%;
+                    min-height: 615px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -444,18 +446,78 @@
                         }
                     }
                 }
+                .info-title{
+                    margin: 2rem 0;
+                    width: 100%;
+                    height: 10vh;
+                    max-height: 100px;
+                    background-color: $primary-red;
+                    color: #fff;
+                    text-align: center;
+                    h1{
+                        font-size: 5rem;
+                    }
+                }
+                .body-information{
+                    height: 55vh;
+                    min-height: 450px;
+                    max-height: 700px;
+                    width: 75%;
+                    margin: 0  auto;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
 
+                    .info{
+                        width: 45%;
+                        height: 25%;
+                        text-align: center;
+                        h3{
+                            font-size: 2rem;
+                            text-transform: uppercase;
+                            font-weight: 400;
+                            letter-spacing: 2px;
+                            padding-bottom: 15px;
+                            margin-bottom: 15px;
+                            border-bottom: 2px solid $font-color-light;
+                        }
+
+                        p{
+                            width: 85%;
+                            margin: 0 auto;
+                            color: #696969;
+                            font-size: 1.5rem;
+                            font-weight: 100;
+                        }
+                    }
+                }
+                
+            }
+            .home-paralax-container{
+                height: 50vh;
+                width: 100%;
+                .paralax{
+                    width: 100%;
+                    height: 100%;
+                    background-image: url('../images/luis-vidal-FodEsaNZs48-unsplash.jpg');
+                    background-attachment: fixed;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
             }
             .home-classes{
                 height: 250vh;
                 min-height: 750px;
-                max-height: 775px;
+                max-height: 850px;
                     .classes-title{
                         text-align: center;
                         padding: 2rem 0 2rem;
                         width: 100%;
                         height: 15vh;
-                        max-height: 100px;
+                        max-height: 125px;
                         background-color: $primary-red;
                         color: #fff;
                         display: flex;
@@ -463,7 +525,7 @@
                         align-items: center;
                         margin-bottom: 1.25rem;
                         h2{
-                            font-size: 4rem;
+                            font-size: 7rem;
                             font-weight: 500;
                         }
                     }
@@ -494,7 +556,7 @@
 
                     img{
                         z-index:1;
-                        max-width: 650px;
+                        max-width: 750px;
                         height: auto;
                         float: right;
                     }
@@ -532,9 +594,11 @@
 
                         h3{
                             padding-left: 10px;
+                            font-size: 2rem;
                         }
                         i{
                             padding-right: 10px;
+                            font-size: 1.5rem;
                         }
                     }
                     .drop-bot{
@@ -582,13 +646,14 @@
                                 align-items: flex-start;
                                 padding-left: 10px;
                                 font-weight: 100;
-                                font-size: 1rem;
+                                font-size: 1.15rem;
 
                                 &.difficulty{
                                     text-transform: uppercase;
                                     font-weight: 600;
-                                    padding-bottom: 5px;
-                                    font-size: 1rem;
+                                    padding-bottom: 10px;
+                                    margin-bottom: 10px;
+                                    font-size: 1.25rem;
                                 }
 
                                 &.advanced{
@@ -603,6 +668,7 @@
                     }
                 }
             }
+
         }
         }
     }
@@ -862,13 +928,148 @@
     .home{
         .home-container{
             &.large{
+                .home-header{
+                    width: 100%;
+                    height: 75vh;
+                    max-height: 800px;    
+                    .header-title{
+                        width: 35%;
+                        float: right;
+                        max-width: 350px;
+                        margin-right: 10%;
+                        .title{
+                            width: 100%;
+                            height: 50%;
+                            h1{
+                                font-size: 6.15rem;
+                            }
+                            h2{
+                                font-size: 4.25rem;
+                                font-weight: 300;
+                            }
+    
+                        }
+                        .header-container-btn{
+                            height: 40%;
+                            margin-top: 25px;
+                            padding-bottom: .5rem;
+                            .link{
 
+                                padding: 20px 35px;
+                                border-radius: 25px;
+                                font-size: 1.65rem;
+                                p{
+
+                                }
+                            }
+                        }
+                    }
+    
+                }
+                .home-container-body{
+                    width: 100%;
+                    height: 150vh;
+                    max-height: 1500px;
+    
+                    .body-tagline{
+                        height: 10vh;
+                        p{
+                            font-size: 1.75rem;
+                        }
+                    }
+                    .body-about{
+                        width: 100%;
+                        height: 30%;
+                        min-height: 615px;
+                        .about-head{
+                            width: 100%;
+                            border: 3px solid #fff;
+                            height: 20%;
+                            border-bottom-left-radius: 25px;
+                            border-bottom-right-radius: 25px;
+                            background-color: #E63946;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            i{
+                                font-size: 3rem;
+                                color: #fff;
+                            }
+                        }
+    
+                        
+                        .about-container{
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        
+    
+                            .about-text{
+                                h3{
+                                    width: 95%;
+                                    font-size: 4.75rem;
+                                    margin-bottom: 15px;
+                                }
+                                p{
+                                    width: 90%;
+                                    font-size: 1.75rem;
+                                }
+                                
+                            }
+                            .about-img{
+                                width: 50%;
+    
+                                img{
+                                    max-width: 100%;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                    .info-title{
+                        margin: 2rem 0;
+                        width: 100%;
+                        height: 10vh;
+                        max-height: 125px;
+                        background-color: $primary-red;
+                        color: #fff;
+                        text-align: center;
+                        h1{
+                            font-size: 6rem;
+                        }
+                    }
+                    .body-information{
+                        height: 55vh;
+                        min-height: 450px;
+                        max-height: 700px;
+                        width: 75%;
+                        .info{
+                            width: 45%;
+                            height: 25%;
+                            text-align: center;
+                            h3{
+                                font-size: 2rem;
+                            }
+    
+                            p{
+                                width: 85%;
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                    
+                .home-paralax-container{
+                    height: 30vh;
+                    width: 100%;
+                }
+                
+    
+                }
             }
         }
-
-
     }
-
  }
 
 // Extra large devices (large desktops, 1200px and up)

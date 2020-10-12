@@ -26,22 +26,16 @@ function Footer(props){
         )
     };
 
-    function largerView(){
-        return(
-            <div className='footer large'>
 
-            </div>
-        )
-    };
 
 
 
     
 
     function renderCorrectView(){
-        return props.width <= 1024
+        return props.width <= 991
         ? smallerView()
-        : largerView();
+        : '';
     }
 
     return(

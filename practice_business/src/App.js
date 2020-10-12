@@ -16,6 +16,7 @@ import Trainers from './components/Trainers';
 import Page404 from './components/Page404';
 import Appointment from './components/Appointment';
 import Footer from './components/Footer';
+import BottomScreenInfo from './components/BottomScreenInfo';
 import SimpleReactLightbox from "simple-react-lightbox";
 
 
@@ -63,6 +64,9 @@ function App() {
                   <Route exact component={() => <Home width={width} /> } path="/"/>
                   <Route component={Page404} />
                 </Switch>
+                <div className='bottom-info'>
+                    <BottomScreenInfo />
+                </div>
           <Footer width={width} routes={[routes[3],routes[4]]}/>
         </Router>
       </SimpleReactLightbox>
