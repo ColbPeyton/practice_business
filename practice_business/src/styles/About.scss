@@ -4,7 +4,6 @@
     .about-container{
         &.small{
             .header-container{
-
             }
 
             .about-container-tagline{
@@ -24,33 +23,49 @@
                 background-color: $background-light-secondary;
                 width: 100%;
                 height: 90vh;
-                max-height: 525px;
+                min-height: 550px;
+                max-height: 600px;
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
                 flex-direction: column;
-                padding-top: 1rem;
-
                 .body-about{
-                    height: 40%;
-                    max-height: 250px;
+                    background-color: $blue-dark;
+                    color: #fff;
+                    height: 50vh;
+                    min-height: 250px;
+                    max-height: 300px;
                     width: 100%;
-                    margin-bottom: 40px;
                     display: flex;
                     justify-content: space-around;
                     align-items: flex-start;
-                    img{
+
+                    .body-img{
                         width: 45%;
-                        max-width: 150px;
+                        height: 100%;
+                        
+                        background-color: $primary-blue;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+                        img{
+                            height: 100%;
+                            width: 97%;
+                            max-width: 175px;
+                        }
                     }
                     .body-info{
                         padding-top: 5px;
                         width: 50%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         p{
                             
-                            font-size: 1rem;
+                            font-size: 1.1rem;
                             font-weight: 500;
-                            padding-bottom: 10px;
                         }
                     }
                 }
@@ -58,7 +73,8 @@
                 .body-secondary{
                     height: 45%;
                     width: 90%;
-                    max-height: 225px;
+                    min-height: 225px;
+                    max-height: 250px;
                     display: flex;
                     justify-content: space-evenly;
                     align-items: center;
@@ -66,7 +82,7 @@
                     p{
                         font-size: 0.925rem;
                         padding-top: 5px;
-                        margin-bottom: 10px;
+                        margin-bottom: 0px;
                         font-weight: 100;
                     }
                 }
@@ -165,6 +181,185 @@
                 height: 40vh;
             }
         }
+        &.large{
+            .header-container{
+                padding-bottom: 0;
+            }
+
+            .about-container-tagline{
+                width: 100%;
+                height: 100px;
+                color: #fff;
+                background-color: $primary-red;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h1{
+                    font-size: 5rem;
+                }
+            }
+
+            .body-container{
+                background-color: $background-light-secondary;
+                width: 100%;
+                height: 90vh;
+                min-height: 975px;
+                max-height: 1000px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: column;
+                padding-top: 0rem;
+
+                .body-about{
+                    background-color: $blue-dark;
+                    color: #fff;
+                    height: 50vh;
+                    min-height: 600px;
+                    max-height: 750px;
+                    width: 100%;
+                    margin-bottom: 0px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    .body-img{
+                        width: 45%;
+                        height: 100%;
+                        
+                        background-color: $primary-blue;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                            max-width: 425px;
+                        }
+                    }
+
+                    .body-info{
+                        padding-top: 5px;
+                        width: 50%;
+                        p{
+                            
+                            font-size: 3rem;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                .body-secondary{
+                    height: 45%;
+                    width: 90%;
+                    min-height: 375px;
+                    max-height: 425px;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    flex-direction: column;
+                    p{
+                        font-size: 1.9rem;
+                        padding-top: 5px;
+                        margin-bottom: 5px;
+                        font-weight: 100;
+                    }
+                }
+                
+            }
+
+            .timeline{
+                height: 200vh;
+                width: 100%;
+                max-height: 1100px;
+                .timeline-title{
+                    width: 100%;
+                    height: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: $primary-red;
+                    color: #fff;
+                    
+                    h2{
+                        font-size: 5rem;
+                    }
+                }
+
+                .timeline-container{
+                    padding-top: 10px;
+                    margin: 0 auto;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: column;
+
+                    .timeline-info{
+                        width: 100%;
+                        height: 9%;
+                        max-height: 100px;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+
+                        .timeline-date{
+                            width: 49%;
+                            text-align: end;
+                            padding-right: 10px;
+                            font-size: 1.75rem;
+                        }
+
+                        .timeline-line{
+                            height: 100%;
+                            width: 8px;
+                            background: $primary-blue;
+                        }
+
+                        .timeline-data{
+                            height: 100%;
+                            width: 49%;
+                            font-size: 1.45rem;
+                            font-weight: 100;
+                            font-style: italic;
+                            padding-left: 10px;
+                            text-align: start;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+
+                            p{
+                                width: 75%;
+                            }
+                        }
+                        &.even{
+                            background-color: $background-light-secondary;
+                            .timeline-date{
+                                width: 49%;
+                                text-align: start;
+                                padding-left: 10px;
+                                padding-right: 0px;
+                            }
+    
+                            .timeline-line{
+                                height: 100%;
+                                width: 8px;
+                                background: $primary-blue;
+                            }
+    
+                            .timeline-data{
+                                height: 100%;
+                                text-align: end;
+                                justify-content: flex-end;
+                                padding-left: 0px;
+                                padding-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -193,7 +388,6 @@
                     justify-content: space-between;
                     align-items: center;
                     flex-direction: column;
-                    padding-top: 1rem;
     
                     .body-about{
                         height: 55%;
@@ -203,10 +397,13 @@
                         display: flex;
                         justify-content: space-around;
                         align-items: flex-start;
-                        img{
-                            width: 45%;
-                            max-width: 190px;
+                        .body-img{
+                            img{
+                                width: 97%;
+                                max-width: 200px;
+                            }
                         }
+                       
                         .body-info{
                             padding-top: 5px;
                             width: 50%;
@@ -219,13 +416,14 @@
                     }
     
                     .body-secondary{
+                        min-height: 250px;
+                        max-height: 275px;
                         width: 85%;
                         justify-content: flex-start;
                         max-height: 250px;
                         p{
-                            font-size: 0.975rem;
+                            font-size: 1rem;
                             margin-bottom: 5px;
-                            padding-top: 5px;
                         }
                     }
                     
@@ -310,47 +508,60 @@
                 }
     
                 .body-container{
+                    background-color: $background-light-secondary;
                     width: 100%;
-                    height: 80vh;
-                    max-height: 600px;
-                    min-height: 575px;
+                    height: 90vh;
+                    min-height: 600px;
+                    max-height: 650px;
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: flex-start;
                     align-items: center;
                     flex-direction: column;
-                    padding-top: 1rem;
-    
                     .body-about{
-                        height: 55%;
-                        max-height: 300px;
+                        background-color: $blue-dark;
+                        color: #fff;
+                        height: 50vh;
+                        min-height: 350px;
+                        max-height: 400px;
                         width: 100%;
-                        margin-bottom: 0px;
                         display: flex;
                         justify-content: space-around;
                         align-items: flex-start;
-                        img{
+    
+                        .body-img{
                             width: 45%;
-                            max-width: 190px;
+                            height: 100%;
+                            img{
+                                height: 100%;
+                                width: 100%;
+                                max-width: 275px;
+                            }
                         }
                         .body-info{
                             padding-top: 5px;
                             width: 50%;
                             p{
                                 
-                                font-size: 1.45rem;
-                                padding-bottom: 0px;
+                                font-size: 2rem;
+                                font-weight: 500;
                             }
                         }
                     }
     
                     .body-secondary{
-                        width: 85%;
-                        justify-content: flex-start;
-                        max-height: 275px;
+                        height: 45%;
+                        width: 90%;
+                        min-height: 275px;
+                        max-height: 300px;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        flex-direction: column;
                         p{
-                            font-size: 1.15rem;
+                            font-size: 1.25rem;
+                            line-height: 1.3;
                             margin-bottom: 5px;
-                            padding-top: 5px;
+                            font-weight: 100;
                         }
                     }
                     
@@ -450,41 +661,60 @@
                 }
     
                 .body-container{
+                    background-color: $background-light-secondary;
                     width: 100%;
-                    height: 50vh;
-                    max-height: 700px;
+                    height: 90vh;
                     min-height: 650px;
-                    padding-top: 1rem;
-    
+                    max-height: 700px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: column;
                     .body-about{
-                        height: 55%;
-                        max-height: 275px;
-                        width: 80%;
-                        margin-bottom: 0px;
-
-                        img{
+                        background-color: $blue-dark;
+                        color: #fff;
+                        height: 50vh;
+                        min-height: 400px;
+                        max-height: 450px;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: flex-start;
+    
+                        .body-img{
                             width: 45%;
-                            max-width: 225px;
+                            height: 100%;
+                            img{
+                                height: 100%;
+                                width: 100%;
+                                max-width: 300px;
+                            }
                         }
                         .body-info{
-                            padding-top: 25px;
+                            padding-top: 5px;
                             width: 50%;
                             p{
                                 
-                                font-size: 1.75rem;
-                                padding-bottom: 0px;
+                                font-size: 2rem;
+                                font-weight: 500;
                             }
                         }
                     }
     
                     .body-secondary{
-                        width: 75%;
-                        justify-content: flex-start;
-                        max-height: 250px;
+                        height: 45%;
+                        width: 90%;
+                        min-height: 300px;
+                        max-height: 325px;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        flex-direction: column;
                         p{
-                            font-size: 1.25rem;
-                            margin-bottom: 20px;
-                            padding-top: 5px;
+                            font-size: 1.4rem;
+                            line-height: 1.3;
+                            margin-bottom: 5px;
+                            font-weight: 100;
                         }
                     }
                     
@@ -568,7 +798,252 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { 
+    .about{
+        .about-container{
+            &.large{
+                .header-container{
     
+                }
+    
+                .about-container-tagline{
+                    width: 100%;
+                    height: 125px;
+                    h1{
+                        font-size: 6rem;
+                    }
+                }
+    
+                .body-container{
+                    width: 100%;
+                    background-color: $blue-dark;
+                    height: 90vh;
+                    min-height: 975px;
+                    max-height: 1000px;
+                    padding-top: 0rem;
+    
+                    .body-about{
+                        max-width: 1100px;
+                        background-color: $blue-dark;
+                        color: #fff;
+                        height: 50vh;
+                        min-height: 650px;
+                        max-height: 850px;
+                        width: 100%;
+                        margin-bottom: 0px;
+                        .body-img{
+                            width: 45%;
+                            height: 100%;
+                            background-color: $primary-blue;
+                            img{
+                                height: 100%;
+                                width: 100%;
+                                max-width: 475px;
+                            }
+                        }
+    
+                        .body-info{
+                            padding-top: 5px;
+                            width: 50%;
+                            p{
+                                padding-left: 15px;
+                                font-size: 3.1rem;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+    
+                    .body-secondary{
+                        height: 45%;
+                        width: 100%;
+                        
+                        min-height: 400px;
+                        max-height: 425px;
+                        background-color: $background-light-secondary;
+                        p{
+                            max-width: 1100px;
+                            font-size: 1.9rem;
+                            line-height: 1.4;
+
+                        }
+                    }
+                    
+                }
+    
+                .timeline{
+                    padding-top: 4rem;
+                    height: 150vh;
+                    width: 100%;
+                    max-height: 1205px;
+                    .timeline-title{
+                        width: 100%;
+                        height: 125px;
+
+                        
+                        h2{
+                            font-size: 6rem;
+                        }
+                    }
+    
+                    .timeline-container{
+                        padding-top: 10px;
+                        margin: 0 auto;
+                        width: 100%;
+                        height: 100%;
+    
+                        .timeline-info{
+                            width: 100%;
+                            max-height: 100px;
+    
+                            .timeline-date{
+                                width: 49%;
+                                padding-right: 15px;
+                                font-size: 2rem;
+                            }
+    
+                            .timeline-line{
+                                width: 8px;
+                                background: $primary-blue;
+                            }
+    
+                            .timeline-data{
+                                max-width: 1100px;
+                                font-size: 1.75rem;
+                                padding-left: 15px;
+                                p{
+                                    width: 75%;
+                                }
+                            }
+                            &.even{
+                                .timeline-date{
+                                    padding-left: 15px;
+                                    padding-right: 0px;
+                                }
+        
+                                .timeline-line{
+                                    width: 8px;
+                                    background: $primary-blue;
+                                }
+        
+                                .timeline-data{
+                                    padding-left: 0px;
+                                    padding-right: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }
+@media (min-width: 2000px) { 
+    .about{
+        .about-container{
+            &.large{
+                .header-container{
+    
+                }
+    
+                .about-container-tagline{
+                    width: 100%;
+                    height: 150px;
+                    h1{
+                        font-size: 8rem;
+                    }
+                }
+    
+                .body-container{
+                    width: 100%;
+                    background-color: $blue-dark;
+                    height: 90vh;
+                    min-height: 975px;
+                    max-height: 1000px;
+                    padding-top: 0rem;
+    
+                    .body-about{
+                        max-width: 1100px;
+                        background-color: $blue-dark;
+                        color: #fff;
+                        height: 50vh;
+                        min-height: 650px;
+                        max-height: 850px;
+                        width: 100%;
+                        margin-bottom: 0px;
+                        .body-img{
+                            width: 45%;
+                            height: 100%;
+                            background-color: $primary-blue;
+                            img{
+                                height: 100%;
+                                width: 100%;
+                                max-width: 475px;
+                            }
+                        }
+    
+                        .body-info{
+                            padding-top: 5px;
+                            width: 50%;
+                            p{
+                                padding-left: 15px;
+                                font-size: 3.1rem;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+    
+                    .body-secondary{
+                        height: 45%;
+                        width: 100%;
+                        
+                        min-height: 400px;
+                        max-height: 425px;
+                        background-color: $background-light-secondary;
+                        p{
+                            max-width: 1100px;
+                            font-size: 2.1rem;
+                            line-height: 1.4;
+
+                        }
+                    }
+                    
+                }
+    
+                .timeline{
+    
+                    max-height: 1480px;
+                    .timeline-title{
+                        width: 100%;
+                        height: 150px;
+
+                        
+                        h2{
+                            font-size: 8rem;
+                        }
+                    }
+    
+                    .timeline-container{
+                        padding-top: 5px;
+
+                        .timeline-info{
+                            max-height: 125px;
+                            .timeline-date{
+                                font-size: 3rem;
+                            }
+
+    
+                            .timeline-data{
+                                max-width: 2000px;
+                                font-size: 2.5rem;
+                                p{
+                                    width: 60%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
  }
 
 

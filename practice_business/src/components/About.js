@@ -10,7 +10,7 @@ function About(props){
 
     return(
         <main className='about'>
-            <div className={`about-container ${props.width <= 1024 ? 'small' : 'large' }`}>
+            <div className={`about-container ${props.width <= 991 ? 'small' : 'large' }`}>
                 <div className='header-container'>
                 <HeaderImage image={headerImage} title={`Our Location`}/>
                 </div>
@@ -18,8 +18,10 @@ function About(props){
                         <h1>Our Story</h1>
                 </div>
                 <div className='body-container'>
-                    <div className='body-about'>
+                  <div className='body-about'>
+                    <div className='body-img'>
                         <img src={owner} alt='Pat' />
+                    </div>
                         <div className='body-info'>
                             <p>
                                 Founded in the early 90s. Our Man Pat wanted to create a gym where everyone was accepted and
@@ -138,7 +140,6 @@ function About(props){
                         </div>
                     </div>
                 </div>
-
             </div>
         </main>
     );
