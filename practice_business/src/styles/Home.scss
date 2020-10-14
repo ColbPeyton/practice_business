@@ -28,18 +28,12 @@
                     height: 70%;
                     width: 100%;
                     display: flex;
-                    flex-direction: column;
                     justify-content: center;
-                    color: #fff;
+                    color: rgb(59, 59, 59);
                     align-items: center;
-                    background: $primary-red;
-                    h1{
-                        font-size: 4rem;
-                        line-height: 1;
-                    }
-                    h2{
-                        font-size: 3rem;
-                        font-weight: 300;
+                    background: $blue-dark;
+                    img{
+                        max-width: 200px;
                     }
                 }
 

@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 import Sidebar from './Sidebar';
 import '../styles/Header.scss';
 
-import icon from '../images/icon.png';
+import icon from '../images/icons/factory-horizontal.png';
 
 function Header(props){
 
@@ -47,7 +47,7 @@ function Header(props){
                     <div className='bottom-bar'>
                         <div className='bottom-logo'>
                         <NavLink className='link' to='/'>
-                            <p>Power <span>Fitness</span></p>
+                            <p>The<span>Factory</span></p>
                         </NavLink>
                             
                         </div>

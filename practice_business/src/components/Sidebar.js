@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {NavLink} from "react-router-dom";
 
-import icon from '../images/icon.png';
+import icon from '../images/icons/factory-horizontal.png';
 
 
 import '../styles/Sidebar.scss';

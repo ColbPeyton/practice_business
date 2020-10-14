@@ -7,6 +7,7 @@ import DropDownData from '../_data/DropDownData';
 
 import sideImage from '../images/z_gym4.png';
 import aboutImg from '../images/about.jpg';
+import logo from '../images/icons/factory vertical.png';
 
 import '../styles/Home.scss';
 
@@ -21,8 +22,7 @@ function Home(props){
                 </div>
                 <div className='home-container-top'>
                     <div className='home-container-tagline'>
-                        <h1>Power</h1>
-                        <h2>Fitness</h2>
+                        <img src={logo} alt='The Factory' />
                     </div>
                     <div className='home-container-btn'>
                         <NavLink className='link' to='/appointment'>

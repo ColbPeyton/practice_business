@@ -11,7 +11,7 @@
     z-index: 10;
 
     .header-logo{
-        width: 50px;
+        max-width: 170px;
         height: 100%;
         display: flex;
         justify-content: center;
@@ -20,9 +20,9 @@
         .link{
             border: none;
             background-color: #fff;
-            padding-left: 10px;
+            padding-left: 5px;
             img{
-                max-height: auto;
+                height: auto;
                 max-width: 100%;
                 cursor: pointer;
             }
@@ -137,13 +137,15 @@
                     height: 100%;
                     width: 100%;
                     border: none;
-                    background: $primary-red;
+                    background: #fff;
                     font-size: 3.5rem;
-                    font-weight: 600;
-                    color: #fff;
+                    font-weight: 500;
+                    color: #333;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
                     span{
-                        font-weight: 300;
-                        font-size: 3rem;
+                        color: $primary-red;
+                        font-weight: 600;
                     }
                 }
             }
@@ -284,13 +286,13 @@
                         height: 100%;
                         width: 100%;
                         border: none;
-                        background: $primary-red;
-                        font-size: 3.5rem;
-                        font-weight: 600;
-                        color: #fff;
+                        background: #fff;
+                        font-size: 5rem;
+                        font-weight: 500;
+                        color: #333;
                         span{
-                            font-weight: 300;
-                            font-size: 3rem;
+                            color: $primary-red;
+                            font-weight: 600;
                         }
                     }
                 }

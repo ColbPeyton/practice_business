@@ -22,7 +22,7 @@
 
         .sidebar-logo{
             width: 98%;
-            height: 90px;
+            height: 150px;
             border-bottom: 1px solid #f0eeee;
             display: flex;
             justify-content: center;
@@ -38,7 +38,7 @@
 
                 img{
                     max-height: auto;
-                    max-width: 25%;
+                    max-width: 100%;
                     cursor: pointer;
                 }
     
@@ -90,7 +90,7 @@
                 align-items: center;
                 button{
                     border: none;
-                    background:$blue-dark ;
+                    background:$primary-red ;
                     padding: 15px 25px;
                     border-radius: 25px;
                     color: #fff;
