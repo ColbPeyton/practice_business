@@ -58,17 +58,17 @@ form{
                 input{
                     height: 20px;
                     max-width: 125px;
-                    font-size: 1.25;
+                    font-size: 1.2rem;
     
                     &:focus{
                         outline: 3px solid $primary-red;
                     }
                 }
                 input[type='text']{
-                    font-size: 1.15rem;
+                    font-size: 1rem;
                 }
                 input[type='date']{
-                    font-size: 1.15rem;
+                    font-size: 0.95rem;
                 }
     
 

@@ -1,5 +1,8 @@
 import React from 'react';
 
+import Overlay from './Overlay';
+import createHistory from 'history/createBrowserHistory'
+
 import '../styles/Form_Gym.scss';
 
 class Form_Trainer extends React.Component{
@@ -11,7 +14,8 @@ class Form_Trainer extends React.Component{
             date : '',
             selectedTrainer : 'Amber',
             workout: '',
-            loaded: false
+            loaded: false,
+            overlay: false
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -31,7 +35,22 @@ class Form_Trainer extends React.Component{
     
     handleSubmit(event) {
         event.preventDefault();
+        this.setState({overlay:true});
+
     }
+
+    disableOverlay(){
+        const history = createHistory();
+        history.go(0)
+    }
+
+
+    renderOverlay(){
+        return this.state.overlay
+        ? <Overlay  disableOverlay={this.disableOverlay}/>
+        : '';
+    }
+
 
     renderWorkoutOptions(){
         let temp;
@@ -62,6 +81,7 @@ class Form_Trainer extends React.Component{
     render(){
         return(
             <form onSubmit={this.handleSubmit}>
+                {this.renderOverlay()}
                 <div className='form-container trainer' style={ {animation: `${this.loaded ? "" : "slideInTrainer"} 0.75s forwards`}}>
                     <div className='form-title'>
                         <h1>Trainer Appointment</h1>

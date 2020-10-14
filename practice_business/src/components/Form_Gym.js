@@ -1,5 +1,10 @@
 import React from 'react';
 
+import Overlay from './Overlay';
+import createHistory from 'history/createBrowserHistory'
+
+
+
 import '../styles/Form_Gym.scss';
 
 class Form_Gym extends React.Component{
@@ -10,17 +15,18 @@ class Form_Gym extends React.Component{
             lName : '',
             date : '',
             goal : '',
-            loaded: false
+            loaded: false,
+            overlay: false
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     componentDidMount(){
-        this.setState({loaded: true})
+        this.setState({loaded: true});
     }
     componentWillUnmount(){
-        this.setState({loaded:false})
+        this.setState({loaded:false, overlay:false});
     }
 
 
@@ -30,12 +36,27 @@ class Form_Gym extends React.Component{
     
     handleSubmit(event) {
         event.preventDefault();
+        this.setState({overlay:true});
     }
+
+    disableOverlay(){
+        const history = createHistory();
+        history.go(0)
+    }
+
+
+    renderOverlay(){
+        return this.state.overlay
+        ? <Overlay  disableOverlay={this.disableOverlay}/>
+        : '';
+    }
+
 
 
     render(){
         return(
             <form onSubmit={this.handleSubmit}>
+                {this.renderOverlay()}
                 <div className='form-container gym' style={ {animation: `${this.loaded ? "" : "slideIn"} 0.75s forwards`}}>
                     <div className='form-title'>
                         <h1>Gym Visit</h1>
