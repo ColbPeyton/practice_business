@@ -727,12 +727,14 @@
                 .body-image-title + div:last-child{
                     background-color: $background-light-primary;
                     height: 100vh;
+                    width: 900px;
                     min-height: 750px;
                     max-height: 800px;    
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     flex-wrap: wrap;
+                    margin-bottom: 2rem;
                         a{
                             width: 50%;
                             border-bottom: 5px;
@@ -850,13 +852,14 @@
                 .body-image-title + div:last-child{
                     background-color: $background-light-primary;
                     height: 100vh;
+                    width: 1200px;
                     min-height: 900px;
                     max-height: 950px;    
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     flex-wrap: wrap;
-                    margin-bottom: 1rem;
+                    margin-bottom: 2rem;
                         a{
                             width: 50%;
                             border-bottom: 5px;

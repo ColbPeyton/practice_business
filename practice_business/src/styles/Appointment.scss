@@ -168,7 +168,7 @@
                     margin: 0 auto;
                     width: 80%;
                     height: 80vh;
-                    max-height: 475px;
+                    max-height: 575px;
                 }
                 
                 .bottom-info{
@@ -238,12 +238,127 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
+    .appointment{
+        .appointment-container{
+            &.small{
+                .appointment-header{
+                    .header-tagline{
+                        height: 100px;
+                        h2{
+                            width: 80%;
+                            font-size: 4rem;
+                        }
+                    }
+                }
+    
+                .form-buttons{
+                    height: 35vh;
+                    max-height: 300px;
+                    .form-selector{
+                        width: 95%;
+                        height: 45%;
+                        max-height: 110px;
+                        font-size: 3rem;
 
+                        &.top{
+                            box-shadow: 20px 0px  $primary-red;
+                            border-top-right-radius: 75px ;
+                        }
+    
+                        &.bottom{
+                            box-shadow: -20px 0px $primary-red;
+                            border-bottom-left-radius: 75px ;
+                            align-self: flex-end;
+                        }
+    
+    
+    
+                        &.active{
+                            background-color: $primary-red;
+                            &.top{
+                                box-shadow: 20px 0px  $primary-blue;
+                            }
+                            &.bottom{
+                                box-shadow: -20px 0px $primary-blue;
+                            }
+                        }
+                    }
+                }
+    
+                .appointment-body{
+                    margin: 0 auto;
+                    width: 65%;
+                    height: 80vh;
+                    max-height: 775px;
+                }
+                
+    
+            }
+        }
+    }
+ 
  }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { 
+    .appointment{
+        .appointment-container{
+            &.small{
+                .appointment-header{
+                    .header-tagline{
+                        height: 150px;
+                        h2{
+                            width: 80%;
+                            font-size: 5rem;
+                        }
+                    }
+                }
     
+                .form-buttons{
+                    height: 35vh;
+                    max-height: 350px;
+                    .form-selector{
+                        width: 75%;
+                        height: 45%;
+                        max-height: 125px;
+                        font-size: 4rem;
+
+                        &.top{
+                            box-shadow: 25px 0px  $primary-red;
+                            border-top-right-radius: 75px ;
+                        }
+    
+                        &.bottom{
+                            box-shadow: -25px 0px $primary-red;
+                            border-bottom-left-radius: 75px ;
+                            align-self: flex-end;
+                        }
+    
+    
+    
+                        &.active{
+                            background-color: $primary-red;
+                            &.top{
+                                box-shadow: 20px 0px  $primary-blue;
+                            }
+                            &.bottom{
+                                box-shadow: -20px 0px $primary-blue;
+                            }
+                        }
+                    }
+                }
+    
+                .appointment-body{
+                    margin: 0 auto;
+                    width: 65%;
+                    height: 80vh;
+                    max-height: 775px;
+                }
+                
+    
+            }
+        }
+    }
  }
 
 

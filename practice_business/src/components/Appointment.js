@@ -19,7 +19,7 @@ function Appointment(props){
     
     return(
         <main className='appointment'>
-            <div className={`appointment-container ${props.width <= 1024 ? 'small' : 'large' }`}>
+            <div className={`appointment-container small`}>
                 <div className='appointment-header'>
                     <HeaderImage image={headerImage} title={'Let\'s Get You In Here'} />
                     <div className='header-tagline'>
