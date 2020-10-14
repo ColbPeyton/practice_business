@@ -202,6 +202,79 @@
 
 }
 
+@media (min-width: 992px) { 
+
+    .profile{
+        height: 20%;
+        .profile-container{
+            max-width: 800px;
+            width: 80%;
+            .profile-img{
+                width: 50%;
+                img{
+        
+                    max-width: 100%;
+                    height: auto;
+                    max-height: 400px;
+        
+                }
+            }
+
+            .profile-info{
+                .name{
+                    font-size: 3.25rem;
+                }
+                .focus{
+                    font-size: 2rem;
+                }
+        
+                .desc{
+                    font-size: 1.75rem;
+                }
+                
+            }
+        }   
+    }
+
+
+}
+@media (min-width: 1200px) { 
+
+    .profile{
+        height: 20%;
+        .profile-container{
+            max-width: 1100px;
+            width: 80%;
+            .profile-img{
+                width: 50%;
+                img{
+        
+                    max-width: 100%;
+                    height: auto;
+                    max-height: 500px;
+        
+                }
+            }
+
+            .profile-info{
+                .name{
+                    font-size: 4.25rem;
+                }
+                .focus{
+                    font-size: 3.25rem;
+                }
+        
+                .desc{
+                    font-size: 2.25rem;
+                }
+                
+            }
+        }   
+    }
+
+
+}
+
 
 
 // Mobile Landscape Devices
