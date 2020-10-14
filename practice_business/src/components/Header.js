@@ -46,7 +46,10 @@ function Header(props){
                 <div className='header-contents bottom'>
                     <div className='bottom-bar'>
                         <div className='bottom-logo'>
-                            <button>Power <span>Fitness</span></button>
+                        <NavLink className='link' to='/'>
+                            <p>Power <span>Fitness</span></p>
+                        </NavLink>
+                            
                         </div>
                             <div className='bottom-nav'>
                                 <nav>

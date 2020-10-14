@@ -44,11 +44,11 @@ function App() {
 
 
   const routes = [
-    <NavLink className='nav' activeClassName="selected" to="/">Home</NavLink>,
-    <NavLink className='nav' activeClassName="selected" to="/about">About Us</NavLink>,
-    <NavLink className='nav' activeClassName="selected" to="/services">What We Offer</NavLink>,
-    <NavLink className='nav' activeClassName="selected" to="/trainers">Our Trainers</NavLink>,
-    <NavLink className='nav' activeClassName="selected" to="/appointment">Schedule a Visit</NavLink>
+    <NavLink exact className='nav' activeClassName="selected" to="/">Home</NavLink>,
+    <NavLink exact className='nav' activeClassName="selected" to="/about">About Us</NavLink>,
+    <NavLink exact className='nav' activeClassName="selected" to="/services">What We Offer</NavLink>,
+    <NavLink exact className='nav' activeClassName="selected" to="/trainers">Our Trainers</NavLink>,
+    <NavLink exact className='nav' activeClassName="selected" to="/appointment">Schedule a Visit</NavLink>
   ]
   return (
     <div className="App">

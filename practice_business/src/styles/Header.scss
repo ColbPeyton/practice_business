@@ -82,9 +82,8 @@
     max-height: 225px;
     letter-spacing: $letter-spacing;
     .header-contents{
-        width: 100%;
         &.top{
-            background: $primary-blue;
+            background: $blue-dark;
             height: 45%;
         }
         &.bottom{
@@ -93,6 +92,8 @@
         .top-bar{
             height: 100%;
             width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
             display: flex;
             justify-content: flex-end;
             align-items: center;
@@ -105,8 +106,9 @@
                 button{
                     color: $primary-blue;
                     border: none;
-                    padding: 5px 15px;
+                    padding: 10px 15px;
                     border-radius: 20px;
+                    font-size: 0.9rem;
                     text-transform: uppercase;
                     cursor: pointer;
                 }
@@ -116,37 +118,43 @@
         .bottom-bar{
             height: 100%;
             width: 100%;
+            
             max-width: $screen-width;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: center;
             .bottom-logo{
                 height: 100%;
-                width: 30%;
+                max-width: 500px;
+                width: 40%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
-                button{
+                .link{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     height: 100%;
                     width: 100%;
                     border: none;
                     background: $primary-red;
-                    font-size: 3rem;
+                    font-size: 3.5rem;
                     font-weight: 600;
                     color: #fff;
                     span{
                         font-weight: 300;
-                        font-size: 2.8rem;
+                        font-size: 3rem;
                     }
                 }
             }
             .bottom-nav{
                 height: 100%;
-                width: 70%;
+                width: 60%;
+                max-width: 1100px;
                 nav{
                     height: 100%;
                     width: 100%;
+                    max-width: 1100px;
                     ul{
                         height: 100%;
                         width: 100%;
@@ -160,7 +168,7 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            transition: all 1s;
+                            transition: all 0.5s;
 
                             &:hover{
                                 background: #9191915d;
@@ -191,11 +199,11 @@
                                     text-decoration: none;
                                 }
                                 &.selected{
-                                    background-color: #e63947ad;
+                                    background-color: $primary-blue;
                                     color: #fff;
 
                                     &:hover{
-                                        background-color: #e6394777;
+                                        background-color: $primary-blue;
                                         color: #fff;
                                     }
                                 }
@@ -211,4 +219,152 @@
         }
     }
     
+}
+
+
+@media (min-width: 1200px){
+    .header-container-larger{
+        width: 100vw;
+        height: 18vh;
+        max-height: 225px;
+        letter-spacing: $letter-spacing;
+        .header-contents{
+            &.top{
+                background: $blue-dark;
+                height: 45%;
+            }
+            &.bottom{
+                height: 55%;
+                width: 100%;
+            }
+            .top-bar{
+                height: 100%;
+                width: 100%;
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                .top-info{
+                    width: 55%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+    
+                    button{
+                        color: $primary-blue;
+                        border: none;
+                        padding: 10px 15px;
+                        border-radius: 20px;
+                        font-size: 0.95rem;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                    }
+                }
+    
+            }
+            .bottom-bar{
+                height: 100%;
+                width: 100%;
+                max-width: 2000px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                .bottom-logo{
+                    height: 100%;
+                    max-width: 1200px;
+                    width: 40%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .link{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
+                        width: 100%;
+                        border: none;
+                        background: $primary-red;
+                        font-size: 3.5rem;
+                        font-weight: 600;
+                        color: #fff;
+                        span{
+                            font-weight: 300;
+                            font-size: 3rem;
+                        }
+                    }
+                }
+                .bottom-nav{
+                    height: 100%;
+                    width: 60%;
+                    max-width: 1100px;
+                    nav{
+                        height: 100%;
+                        width: 100%;
+                        max-width: 2000px;
+                        ul{
+                            height: 100%;
+                            width: 100%;
+                            list-style-type: none;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            li{
+                                width: 20%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                transition: all 0.5s;
+    
+                                &:hover{
+                                    background: #9191915d;
+                                    color:$blue-dark;
+    
+                                    .nav{
+                                        color:$blue-dark;
+                                        &:visited{
+                                            color:$blue-dark;
+                                        }
+        
+                                    }
+                                }
+                                
+                                .nav{
+                                    height: 100%;
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    color: $font-color;
+                                    text-decoration: none;
+                                    text-align: center;
+    
+                                    font-size: 0.95rem;
+                                    &:visited{
+                                        color: $font-color;
+                                        text-decoration: none;
+                                    }
+                                    &.selected{
+                                        background-color: $primary-blue;
+                                        color: #fff;
+    
+                                        &:hover{
+                                            background-color: $primary-blue;
+                                            color: #fff;
+                                        }
+                                    }
+    
+                                }
+    
+                            }
+           
+                        }
+                    }
+    
+                }
+            }
+        }
+        
+    }
 }
