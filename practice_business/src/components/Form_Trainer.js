@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Overlay from './Overlay';
-import createHistory from 'history/createBrowserHistory'
+import { createBrowserHistory } from 'history'
 
 import '../styles/Form_Gym.scss';
 
@@ -40,7 +40,7 @@ class Form_Trainer extends React.Component{
     }
 
     disableOverlay(){
-        const history = createHistory();
+        const history = createBrowserHistory();
         history.go(0)
     }
 

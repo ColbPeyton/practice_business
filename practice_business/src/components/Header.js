@@ -15,7 +15,7 @@ function Header(props){
             <div>
                 <header className= 'header-container-smaller'>
                     <div className='header-logo'>
-                        <NavLink className='link' to='/'>
+                        <NavLink exact className='link' to='/'>
                             <img src={icon} alt='gym icon'/>
                         </NavLink> 
                     </div>
@@ -46,7 +46,7 @@ function Header(props){
                 <div className='header-contents bottom'>
                     <div className='bottom-bar'>
                         <div className='bottom-logo'>
-                        <NavLink className='link' to='/'>
+                        <NavLink exact className='link' to='/'>
                             <p>The<span>Factory</span></p>
                         </NavLink>
                             

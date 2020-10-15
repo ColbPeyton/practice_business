@@ -84,7 +84,9 @@ function Home(props){
             <div className={`home-container large`}>
                 <div className='home-header'>
                     <div className='header-title'>
-                            <div className='title'><h1>Power</h1><h2>Fitness</h2></div>
+                            <div className='title'>
+                                <img src={logo} alt='The Factory' />
+                            </div>
                             <div className='header-container-btn'>
                             <NavLink className='link' to='/appointment'>
                                 <p>Let's Get To Work</p>
