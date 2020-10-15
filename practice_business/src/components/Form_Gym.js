@@ -51,11 +51,17 @@ class Form_Gym extends React.Component{
     }
 
 
-
     render(){
         return(
             <form onSubmit={this.handleSubmit}>
-                <div className='form-container gym' style={ {animation: `${this.loaded ? "" : "slideIn"} 0.75s forwards`}}>
+                <div className='form-container gym' 
+                    style={ 
+                        {
+                            animation: `${this.loaded ? "" : "slideIn"} 0.75s forwards`, 
+                            '-moz-animation': `${this.loaded ? "" : "slideIn"} 0.75s forwards`,
+                            '-webkit-animation': `${this.loaded ? "" : "slideIn"} 0.75s forwards`,
+                            '-o-animation': `${this.loaded ? "" : "slideIn"} 0.75s forwards`,
+                            }}>
                 {this.renderOverlay()}
                     <div className='form-title'>
                         <h1>Gym Visit</h1>

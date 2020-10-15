@@ -815,14 +815,6 @@ form{
 
 
 
-@keyframes slideIn{
-    from{
-        transform: translate(-800px, 0px);
-    }
-    to{
-        left: 0;
-    }
-}
 
 @keyframes slideInTrainer{
     from{
@@ -832,6 +824,75 @@ form{
         left: 0;
     }
 }
+
+
+@keyframes slideIn{
+    from{
+        transform: translate(-800px, 0px);
+    }
+    to{
+        left: 0;
+    }
+}
+
+@-webkit-keyframes slideIn {
+    from{
+        transform: translate(-800px, 0px);
+    }
+    to{
+        left: 0;
+    }
+  }
+  @-moz-keyframes slideIn{
+    from{
+        transform: translate(-800px, 0px);
+    }
+    to{
+        left: 0;
+    }
+  }
+  @-o-keyframes slideIn {
+    from{
+        transform: translate(-800px, 0px);
+    }
+    to{
+        left: 0;
+    }
+  }
+
+
+@keyframes slideInTrainer{
+    from{
+        transform: translate(800px, 0px);
+    }
+    to{
+        left: 0;
+    }
+}
+@-webkit-keyframes slideInTrainer {
+    from{
+        transform: translate(800px, 0px);
+    }
+    to{
+        left: 0;
+    }
+  }
+  @-moz-keyframes slideInTrainer{
+    from{
+        transform: translate(800px, 0px);
+    }
+    to{
+        left: 0;
+    }
+  }
+  @-o-keyframes slideInTrainer {
+    from{
+        transform: translate(800px, 0px);
+    }
+    to{
+        left: 0;
+    }
+  }
 
 
 
