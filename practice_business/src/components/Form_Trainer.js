@@ -81,8 +81,8 @@ class Form_Trainer extends React.Component{
     render(){
         return(
             <form onSubmit={this.handleSubmit}>
-                {this.renderOverlay()}
                 <div className='form-container trainer' style={ {animation: `${this.loaded ? "" : "slideInTrainer"} 0.75s forwards`}}>
+                {this.renderOverlay()}
                     <div className='form-title'>
                         <h1>Trainer Appointment</h1>
                     </div>
