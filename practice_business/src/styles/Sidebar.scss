@@ -2,8 +2,9 @@
 @import './utilities';
 
 .sidebar{
+    overflow: hidden;
     height: 1000vh;
-    max-height: 3050px;
+    max-height: 2875px;
     width: 260px;
     position: absolute;
     top: 0;

@@ -1,6 +1,7 @@
 @import './colors';
 
 .appointment{
+    overflow: hidden;
     width: 100%;
     height: 100%;
 
@@ -28,14 +29,14 @@
             .form-buttons{
                 width: 100%;
                 padding-top: 1rem;
-                height: 25vh;
-                max-height: 150px;
+                height: 30vh;
+                max-height: 200px;
                 display: flex;
                 justify-content: center;
                 align-items: flex-start;
                 flex-direction: column;
                 .form-selector{
-                    width: 95%;
+                    width: 90%;
                     height: 45%;
                     max-height: 50px;
                     font-size: 1.5rem;
@@ -108,10 +109,10 @@
                 }
     
                 .form-buttons{
-                    height: 25vh;
-                    max-height: 175px;
+                    height: 30vh;
+                    max-height: 225px;
                     .form-selector{
-                        width: 95%;
+                        width: 85%;
                         height: 45%;
                         max-height: 75px;
                         font-size: 1.9rem;
@@ -148,16 +149,16 @@
                         height: 100px;
                         h2{
                             width: 90%;
-                            font-size: 2.5rem;
+                            font-size: 3rem;
                         }
                     }
                 }
     
                 .form-buttons{
-                    height: 25vh;
-                    max-height: 175px;
+                    height: 30vh;
+                    max-height: 250px;
                     .form-selector{
-                        width: 95%;
+                        width: 80%;
                         height: 45%;
                         max-height: 75px;
                         font-size: 1.9rem;
@@ -197,19 +198,19 @@
             &.small{
                 .appointment-header{
                     .header-tagline{
-                        height: 100px;
+                        height: 125px;
                         h2{
                             width: 80%;
-                            font-size: 3.25rem;
+                            font-size: 3.5rem;
                         }
                     }
                 }
     
                 .form-buttons{
-                    height: 25vh;
-                    max-height: 200px;
+                    height: 30vh;
+                    max-height: 250px;
                     .form-selector{
-                        width: 95%;
+                        width: 75%;
                         height: 45%;
                         max-height: 90px;
                         font-size: 2.25rem;
@@ -243,7 +244,7 @@
             &.small{
                 .appointment-header{
                     .header-tagline{
-                        height: 100px;
+                        height: 125px;
                         h2{
                             width: 80%;
                             font-size: 4rem;
@@ -253,9 +254,9 @@
     
                 .form-buttons{
                     height: 35vh;
-                    max-height: 300px;
+                    max-height: 350px;
                     .form-selector{
-                        width: 95%;
+                        width: 70%;
                         height: 45%;
                         max-height: 110px;
                         font-size: 3rem;
@@ -316,12 +317,72 @@
     
                 .form-buttons{
                     height: 35vh;
-                    max-height: 350px;
+                    max-height: 450px;
                     .form-selector{
-                        width: 75%;
+                        width: 65%;
                         height: 45%;
-                        max-height: 125px;
-                        font-size: 4rem;
+                        max-height: 150px;
+                        font-size: 5rem;
+
+                        &.top{
+                            box-shadow: 25px 0px  $primary-red;
+                            border-top-right-radius: 75px ;
+                        }
+    
+                        &.bottom{
+                            box-shadow: -25px 0px $primary-red;
+                            border-bottom-left-radius: 75px ;
+                            align-self: flex-end;
+                        }
+    
+    
+    
+                        &.active{
+                            background-color: $primary-red;
+                            &.top{
+                                box-shadow: 20px 0px  $primary-blue;
+                            }
+                            &.bottom{
+                                box-shadow: -20px 0px $primary-blue;
+                            }
+                        }
+                    }
+                }
+    
+                .appointment-body{
+                    margin: 0 auto;
+                    width: 65%;
+                    height: 80vh;
+                    max-height: 775px;
+                }
+                
+    
+            }
+        }
+    }
+ }
+@media (min-width: 2000px) { 
+    .appointment{
+        .appointment-container{
+            &.small{
+                .appointment-header{
+                    .header-tagline{
+                        height: 150px;
+                        h2{
+                            width: 90%;
+                            font-size: 8rem;
+                        }
+                    }
+                }
+    
+                .form-buttons{
+                    height: 35vh;
+                    max-height: 500px;
+                    .form-selector{
+                        width: 60%;
+                        height: 45%;
+                        max-height: 175px;
+                        font-size: 6rem;
 
                         &.top{
                             box-shadow: 25px 0px  $primary-red;
