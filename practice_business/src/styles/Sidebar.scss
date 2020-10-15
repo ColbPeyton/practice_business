@@ -109,6 +109,33 @@
 }
 
 
+
+@media(min-width: 568px) and (max-height: 414px){
+    .sidebar{
+        overflow: auto;
+        max-height: 2875px;
+
+        // animation: slideIn ease-in-out 0.5s forwards;
+        .sidebar-container{
+            width: 260px;
+            height: 100%;
+            overflow: auto;
+    
+            .sidebar-logo{
+                .link{
+                    height: 70px;
+                    width: 100%;
+                }
+            }
+            
+    
+        }
+    }
+
+
+}
+
+
 @keyframes slideIn{
     from{
         left: -260px;

@@ -837,7 +837,7 @@ form{
 
 @-webkit-keyframes slideIn {
     from{
-        transform: translate(-800px, 0px);
+        -webkit-transform: translate(-800px, 0px);
     }
     to{
         left: 0;
@@ -871,7 +871,7 @@ form{
 }
 @-webkit-keyframes slideInTrainer {
     from{
-        transform: translate(800px, 0px);
+        -webkit-transform: translate(800px, 0px);
     }
     to{
         left: 0;
