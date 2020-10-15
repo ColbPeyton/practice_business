@@ -47,7 +47,7 @@ function Header(props){
                     <div className='bottom-bar'>
                         <div className='bottom-logo'>
                         <NavLink exact className='link' to='/'>
-                            <p>The<span>Factory</span></p>
+                            <img src={icon} alt='gym icon'/>
                         </NavLink>
                             
                         </div>

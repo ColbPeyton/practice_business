@@ -140,14 +140,8 @@
                     width: 100%;
                     border: none;
                     background: #fff;
-                    font-size: 3.5rem;
-                    font-weight: 500;
-                    color: #333;
-                    text-transform: uppercase;
-                    letter-spacing: 1px;
-                    span{
-                        color: $primary-red;
-                        font-weight: 600;
+                    img{
+                        max-width: 425px;
                     }
                 }
             }
@@ -203,11 +197,11 @@
                                     text-decoration: none;
                                 }
                                 &.selected{
-                                    background-color: $primary-blue;
+                                    background-color: $primary-red;
                                     color: #fff;
 
                                     &:hover{
-                                        background-color: $primary-blue;
+                                        background-color: $primary-red;
                                         color: #fff;
                                     }
                                 }
@@ -281,22 +275,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    .link{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        height: 100%;
-                        width: 100%;
-                        border: none;
-                        background: #fff;
-                        font-size: 5rem;
-                        font-weight: 500;
-                        color: #333;
-                        span{
-                            color: $primary-red;
-                            font-weight: 600;
-                        }
-                    }
+
                 }
                 .bottom-nav{
                     height: 100%;

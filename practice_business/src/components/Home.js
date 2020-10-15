@@ -100,7 +100,7 @@ function Home(props){
                     </div>
                     <div className='body-about'>
                         <div className='about-head'>
-                            <i className="fas fa-angle-down"></i>
+                            <a href="#info"><i className="fas fa-angle-down"></i></a>
                         </div>
                         <div className='about-container'>
                             <div className='about-text'>
@@ -113,7 +113,7 @@ function Home(props){
                         </div>
                         
                     </div>
-                    <div className='info-title'><h1>What We Offer</h1></div>
+                    <div id='info' className='info-title'><h1>What We Offer</h1></div>
                     <div className='body-information'>
                         <div className='info'>
                             <h3>Always Available</h3>
