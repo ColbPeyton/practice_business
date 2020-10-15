@@ -44,6 +44,7 @@
 
         .dropdown{
             width: 50%;
+            min-width: 25px;
             max-width: 32px;
             border: 2px solid $blue-dark;
             background: $blue-dark;
