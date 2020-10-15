@@ -12,10 +12,10 @@ function About(props){
         <main className='about'>
             <div className={`about-container ${props.width <= 991 ? 'small' : 'large' }`}>
                 <div className='header-container'>
-                <HeaderImage image={headerImage} title={`Our Location`}/>
+                <HeaderImage image={headerImage} title={`Our Factory`}/>
                 </div>
                 <div className='about-container-tagline'>
-                        <h1>Our Story</h1>
+                        <h1>The Story</h1>
                 </div>
                 <div className='body-container'>
                   <div className='body-about'>
@@ -33,11 +33,11 @@ function About(props){
                         <p>
                         &emsp;Pat has been in the gym his entire life. After years of managing a bix box gym he saw
                             the issues with their form of a judgement free zone. In 1991, Pat decided enough was enough and 
-                            opened the doors to Power Gym in beautiful downtown New Orleans. 
+                            opened the doors to <span className='the'>THE</span><span className='factory'>FACTORY</span> in beautiful downtown New Orleans. 
                         </p>
                         <p>
-                        &emsp; Open all day everyday, Power Fitness has the equipment, classes, people, and location to set
-                        you up for success. Power Fitness is here to support you and your active lifestyle no matter the 
+                        &emsp; Open all day everyday, <span className='the'>THE</span><span className='factory'>FACTORY</span> has the equipment, classes, people, and location to set
+                        you up for success.<span className='the'>THE</span><span className='factory'>FACTORY</span> is here to support you and your active lifestyle no matter the 
                         goals you've set.
                         </p>
                     </div>
@@ -53,7 +53,7 @@ function About(props){
                             </div>
                             <div className='timeline-line'></div>
                             <div className='timeline-data'>
-                                <p>Power Fitness Business District Opens</p>
+                                <p><span className='the'>THE</span><span className='factory'>FACTORY</span>: Business District Opens</p>
                             </div>
                         </div>
                         <div className='timeline-info even'>
@@ -72,7 +72,7 @@ function About(props){
                             </div>
                             <div className='timeline-line'></div>
                             <div className='timeline-data'>
-                                <p>Power Fitness French Quarter Opens</p>
+                                <p><span className='the'>THE</span><span className='factory'>FACTORY</span>: French Quarter Opens</p>
                             </div>
                         </div>
                         <div className='timeline-info even'>
@@ -108,7 +108,7 @@ function About(props){
                             </div>
                             <div className='timeline-line'></div>
                             <div className='timeline-data'>
-                                <p>Constructed Private Weight Room & Crossfit Arena At Frech Quater Location</p>
+                                <p>Constructed Private Weight Room & Crossfit Arena At <span className='the'>THE</span><span className='factory'>FACTORY</span>: Frech Quater</p>
                             </div>
                         </div>
                         <div className='timeline-info even'>
@@ -131,7 +131,7 @@ function About(props){
                         </div>
                         <div className='timeline-info even'>
                         <div className='timeline-data'>
-                                <p>Currently Constructing Yoga Zone At Business District Location</p>
+                                <p>Constructing Yoga Zone At <span className='the'>THE</span><span className='factory'>FACTORY</span>: Business District</p>
                             </div>
                             <div className='timeline-line'></div>
                             <div className='timeline-date'>
