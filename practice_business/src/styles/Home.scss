@@ -870,8 +870,9 @@
                     height: 45vh;
                 }
                 .home-container-top{
-                    height: 45vh;
-                    max-height: 300px;
+                    height: 60vh;
+                    min-height: 325px;
+                    max-height: 350px;
                     .home-container-tagline{
                         min-height: 280px;
                         height: 80%;
@@ -880,6 +881,7 @@
                         justify-content: center;
                         color: rgb(59, 59, 59);
                         align-items: center;
+                        padding-bottom: 10px;
                         background: #fff;
                         img{
                             max-width: 325px;
