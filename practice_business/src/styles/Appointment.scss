@@ -36,13 +36,14 @@
                 align-items: flex-start;
                 flex-direction: column;
                 .form-selector{
-                    width: 90%;
+                    width: 85%;
                     height: 45%;
                     max-height: 50px;
                     font-size: 1.5rem;
-                    background: $primary-blue;
+                    background: $blue-dark;
                     color: #fff;
                     border: none;
+
 
                     button:focus{
                         outline: 0;
@@ -65,10 +66,10 @@
                     &.active{
                         background-color: $primary-red;
                         &.top{
-                            box-shadow: 10px 0px  $primary-blue;
+                            box-shadow: 10px 0px  $blue-dark;
                         }
                         &.bottom{
-                            box-shadow: -10px 0px $primary-blue;
+                            box-shadow: -10px 0px $blue-dark;
                         }
                     }
                     
@@ -115,7 +116,7 @@
                         width: 85%;
                         height: 45%;
                         max-height: 75px;
-                        font-size: 1.9rem;
+                        font-size: 1.75rem;
                     }
                 }
     
