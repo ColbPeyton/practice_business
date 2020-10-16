@@ -182,9 +182,9 @@
                                 color:$blue-dark;
 
                                 .nav{
-                                    color:$blue-dark;
+                                    color:$primary-blue-light;
                                     &:visited{
-                                        color:$blue-dark;
+                                        color:$primary-blue-light;
                                     }
     
                                 }
@@ -338,11 +338,11 @@
                                         text-decoration: none;
                                     }
                                     &.selected{
-                                        background-color: $primary-blue;
+                                        background-color: $primary-red;
                                         color: #fff;
     
                                         &:hover{
-                                            background-color: $primary-blue;
+                                            background-color: $primary-red;
                                             color: #fff;
                                         }
                                     }

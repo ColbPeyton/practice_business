@@ -9,7 +9,7 @@ import '../styles/Sidebar.scss';
 function Sidebar(props){
 
     const [active, setActive] = useState(true);
-    const height = useRef(window.pageYOffset);
+    const height = useRef(document.body.scrollTop);
 
     useEffect(()=>{
        setActive(props.sidebar)
