@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState, useEffect} from 'react';
 import {NavLink} from "react-router-dom";
 
 import icon from '../images/icons/factory-horizontal.png';
@@ -9,7 +9,6 @@ import '../styles/Sidebar.scss';
 function Sidebar(props){
 
     const [active, setActive] = useState(true);
-    const height = useRef(document.body.scrollTop);
 
     useEffect(()=>{
        setActive(props.sidebar)
@@ -24,7 +23,7 @@ function Sidebar(props){
 
     return(
         <div className={`sidebar`} style={ {animation: `${active ? "slideIn" : "slideOut"} 0.5s forwards`} }>
-            <div className='sidebar-container' style={{top: height}}>
+            <div className='sidebar-container' >
                 <div className='sidebar-logo'>
                     <NavLink className='link' to='/' onClick={() => disable()}>
                         <img src={icon} alt='gym icon'/>
