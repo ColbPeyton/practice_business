@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Overlay from './Overlay';
-import { createBrowserHistory } from 'history'
 
 
 import '../styles/Form_Gym.scss';
@@ -39,8 +38,7 @@ class Form_Gym extends React.Component{
     }
 
     disableOverlay(){
-        const history = createBrowserHistory();
-        history.go(0)
+        window.location.reload();
     }
 
 
@@ -58,9 +56,9 @@ class Form_Gym extends React.Component{
                     style={ 
                         {
                             animation: `${this.loaded ? "" : "slideIn"} 0.75s forwards`, 
-                            '-moz-animation': `${this.loaded ? "" : "slideIn"} 0.75s forwards`,
-                            '-webkit-animation': `${this.loaded ? "" : "slideIn"} 0.75s forwards`,
-                            '-o-animation': `${this.loaded ? "" : "slideIn"} 0.75s forwards`,
+                            'MozAnimation': `${this.loaded ? "" : "slideIn"} 0.75s forwards`,
+                            'WebkitAnimation': `${this.loaded ? "" : "slideIn"} 0.75s forwards`,
+                            'OAnimation': `${this.loaded ? "" : "slideIn"} 0.75s forwards`,
                             }}>
                 {this.renderOverlay()}
                     <div className='form-title'>
