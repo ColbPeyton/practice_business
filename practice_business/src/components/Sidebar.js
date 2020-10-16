@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import {NavLink} from "react-router-dom";
 
 import icon from '../images/icons/factory-horizontal.png';
@@ -9,12 +9,10 @@ import '../styles/Sidebar.scss';
 function Sidebar(props){
 
     const [active, setActive] = useState(true);
-    const [height, setHeight] = useState(window.pageYOffset);
+    const height = useRef(window.pageYOffset);
 
     useEffect(()=>{
        setActive(props.sidebar)
-       setHeight(window.pageYOffset)
-       console.log(height)
 
     }, [props.sidebar]);
 
