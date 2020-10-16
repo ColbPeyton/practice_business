@@ -15,6 +15,7 @@
     // animation: slideIn ease-in-out 0.5s forwards;
     .sidebar-container{
         position: fixed;
+        -webkit-backface-visibility: hidden;
         width: 260px;
         height: 460px;
         display: flex;
@@ -107,6 +108,7 @@
 
     }
 }
+
 
 
 
