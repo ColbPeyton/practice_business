@@ -14,7 +14,9 @@
     overflow: hidden;
     .sidebar-container{
         position: fixed !important;
-        width: 260px;
+        width: 100%;
+        max-width: 260px;
+        -webkit-backface-visibility: hidden;
         height: 460px;
         display: flex;
         flex-direction: column;
@@ -23,6 +25,7 @@
 
         .sidebar-logo{
             width: 98%;
+            max-width: 260px;
             height: 150px;
             border-bottom: 1px solid #f0eeee;
             display: flex;
@@ -49,8 +52,12 @@
         .sidebar-container-links{
             height: 476px;
             width: 100%;
+            max-width: 260px;
+
             ul{
                 width: 98%;
+                max-width: 260px;
+
                 height: 100%;
                 display: flex;
                 flex-direction: column;
@@ -64,9 +71,12 @@
                     align-items: center;
                     border-bottom: 1px solid #f0eeee;
 
+
                     .nav{
                         height: 100%;
                         width: 100%;
+                        max-width: 260px;
+
                         color: $font-color-light;  
                         letter-spacing: 1px;
                         text-decoration: none;
