@@ -13,7 +13,7 @@
     background: $background-light-primary;
     overflow: hidden;
     .sidebar-container{
-        position: sticky !important;
+        position: fixed !important;
         width: 100%;
         max-width: 260px;
         height: 460px;
