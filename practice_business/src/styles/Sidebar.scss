@@ -20,7 +20,8 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        transition: top ease-in;
+        transition: top ease-in-out;
+        transition-delay: 0.75s;
 
         .sidebar-logo{
             width: 98%;
