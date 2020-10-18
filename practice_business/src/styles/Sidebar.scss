@@ -13,10 +13,9 @@
     background: $background-light-primary;
     overflow: hidden;
     .sidebar-container{
-        position: fixed !important;
+        position: sticky !important;
         width: 100%;
         max-width: 260px;
-        -webkit-backface-visibility: hidden;
         height: 460px;
         display: flex;
         flex-direction: column;
