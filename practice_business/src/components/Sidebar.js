@@ -10,25 +10,41 @@ function Sidebar(props){
 
     const [active, setActive] = useState(true);
     const [height, setHeight] = useState(0);
+
+    useEffect(()=>{
+        window.addEventListener('scroll', handleScroll);
+
+        return() =>{
+            window.removeEventListener('scroll', handleScroll);
+        }
+    }, [])
+
     useEffect(()=>{
        setActive(props.sidebar)
 
     }, [props.sidebar]);
 
+    // Detect if mobile device, set to pageYOffset, set 0
     useEffect(()=>{
         if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
             setHeight(window.pageYOffset);
         }else{
             setHeight(0);
         }
-
-        console.log(height);
     }, [props.sidebar, height])
 
     // call parent function to disable sidebar when link is clicked
     function disable(){
         setActive(false);
         props.disableSidebar();
+    }
+
+    function handleScroll(){
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+            setHeight(window.pageYOffset);
+        }else{
+            setHeight(0);
+        }
     }
 
     return(
