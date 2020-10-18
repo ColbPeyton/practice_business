@@ -12,7 +12,6 @@
     z-index: 100;
     background: $background-light-primary;
     overflow: hidden;
-    // animation: slideIn ease-in-out 0.5s forwards;
     .sidebar-container{
         position: fixed;
         width: 260px;
@@ -20,8 +19,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        transition: top ease-in-out;
-        transition-delay: 300ms;
+        transition: top ease;
 
         .sidebar-logo{
             width: 98%;
