@@ -20,7 +20,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        transition: top ease-out;
+        transition: top ease-in;
 
         .sidebar-logo{
             width: 98%;
@@ -131,7 +131,15 @@
                 }
             }
             
-    
+            .sidebar-container-links{
+                height: 400px;
+                width: 100%;
+                ul{
+                    li{
+                        height: 45px;
+                    }
+                }
+            }
         }
     }
 
