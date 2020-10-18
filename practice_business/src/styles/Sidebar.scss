@@ -20,6 +20,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        transition: top ease-in-out;
 
         .sidebar-logo{
             width: 98%;

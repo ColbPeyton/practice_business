@@ -41,9 +41,8 @@ function Sidebar(props){
     // Update position of sidebar based on scroll
     function handleScroll(){
         if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-            setTimeout(() => {
-                setHeight(window.pageYOffset);
-            }, 500);
+            setHeight(window.pageYOffset);
+
         }else{
             setHeight(0);
         }
