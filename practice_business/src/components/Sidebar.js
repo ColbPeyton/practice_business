@@ -41,13 +41,7 @@ function Sidebar(props){
     // Update position of sidebar based on scroll
     function handleScroll(){
         if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-            if(window.matchMedia("(orientation: portrait)").matches){
-                setHeight(window.pageYOffset);
-            }else{
-                setHeight(window.pageYOffset - 50);
-            }
-            
-
+            setHeight(window.pageYOffset);
         }else{
             setHeight(0);
         }
