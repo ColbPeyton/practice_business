@@ -21,7 +21,6 @@ function Sidebar(props){
 
     useEffect(()=>{
        setActive(props.sidebar)
-
     }, [props.sidebar]);
 
     // Detect if mobile device, set to pageYOffset, set 0
@@ -39,9 +38,12 @@ function Sidebar(props){
         props.disableSidebar();
     }
 
+    // Update position of sidebar based on scroll
     function handleScroll(){
         if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-            setHeight(window.pageYOffset);
+            setTimeout(() => {
+                setHeight(window.pageYOffset);
+            }, 500);
         }else{
             setHeight(0);
         }
