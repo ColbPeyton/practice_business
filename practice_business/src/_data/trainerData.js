@@ -27,7 +27,7 @@ const trainerImages = [
     {
         name: 'Rick',
         focus: 'Weightlifting, Pound, Muay Thai',
-        desc: 'Rick will show you how to throw a bunch and lift more weight than you\'ve ever imagined',
+        desc: 'Rick will show you how to throw a punch and lift more weight than you\'ve ever imagined',
         image: images[4],
         alt: 'Trainer Rick'
     },
