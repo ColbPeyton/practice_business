@@ -12,13 +12,13 @@ import '../styles/Page404.scss';
 function Page404(){
     return(
         <div className='error'>
-            <div className='header-container'>
-            <HeaderImage image={headerImage} title={`We're Not Sure What Happened`} pos={'center'}/>
-            <div className='header-container-btn'>
+            <div className='error-img'>
+                <HeaderImage image={headerImage} title={`Something Went Wrong...`} pos={'center'}/>
+            </div>
+            <div className='btn'>
                     <NavLink className='link' to='/'>
                         <p>Let's Get You Back Home</p>
                     </NavLink>
-            </div>
             </div>
         </div>
     )
