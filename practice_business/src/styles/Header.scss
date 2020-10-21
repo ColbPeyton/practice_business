@@ -22,7 +22,9 @@
             background-color: #fff;
             padding-left: 5px;
             max-height: 64px;
-
+            &:hover{
+                background-color: #fff;
+            }
             img{
                 height: auto;
                 max-width: 100%;

@@ -60,6 +60,9 @@
                             text-align: center;
                             text-transform: uppercase;
                         }
+                        &:hover{
+                            background: $primary-blue;
+                        }
                     }
                 }
             }
@@ -347,6 +350,9 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
+                            &:hover{
+                                background: $primary-blue;
+                            }
                             p{
                                 font-weight: 300;
                                 text-align: center;

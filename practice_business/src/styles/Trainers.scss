@@ -24,6 +24,10 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                &:hover{
+                    background: $primary-red;
+                }
                 p{
                     text-align: center;
                     text-transform: uppercase;

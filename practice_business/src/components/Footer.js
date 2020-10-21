@@ -17,7 +17,7 @@ function Footer(props){
                         <i className="far fa-calendar-check"></i>
                         <p>Schedule a Visit</p>
                     </NavLink>
-                    <NavLink className='link' to='/contact'>
+                    <NavLink className='link' to='/appointment'>
                         <i className="fas fa-phone"></i>
                         <p>Call Us</p>
                     </NavLink>

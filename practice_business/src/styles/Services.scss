@@ -157,6 +157,10 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+
+                    &:hover{
+                        background-color: $primary-red;
+                    }
                     p{
                         text-align: center;
                         text-transform: uppercase;
@@ -394,7 +398,6 @@
                     align-items: center;
                     margin-top: 25px;
                     .link{
-                        background: $primary-blue;
                         color: $background-light-primary;
                         padding: 15px 30px;
                         border-radius: 25px;

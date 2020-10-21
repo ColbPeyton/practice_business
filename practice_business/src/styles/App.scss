@@ -10,8 +10,17 @@
 
     .link{
         text-decoration: none;
+        background: $primary-red;
+        color: $background-light-primary;
+        transition: all 500ms;
+
         &:visited{
             text-decoration: none;
+        }
+
+        
+        &:hover{
+            background: $primary-blue; 
         }
     }
 

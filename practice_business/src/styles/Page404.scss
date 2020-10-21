@@ -16,7 +16,7 @@
         align-items: center;
         // margin: 1rem 0;
         .link{
-            background: $primary-blue;
+            background: $primary-red;
             color: $background-light-primary;
             padding: 15px 20px;
             border-radius: 25px;
@@ -28,6 +28,8 @@
                 text-align: center;
                 text-transform: uppercase;
             }
+
+
         }
     }
 }
