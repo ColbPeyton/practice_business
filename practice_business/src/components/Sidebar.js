@@ -25,7 +25,7 @@ function Sidebar(props){
 
     // Detect if mobile device, set to pageYOffset, set 0
     useEffect(()=>{
-        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        if(isMobileDevice()){
             setHeight(window.pageYOffset);
         }else{
             setHeight(0);
@@ -40,12 +40,17 @@ function Sidebar(props){
 
     // Update position of sidebar based on scroll
     function handleScroll(){
-        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        // if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        if(isMobileDevice()){
             setHeight(window.pageYOffset);
         }else{
             setHeight(0);
         }
     }
+
+    function isMobileDevice() {
+        return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+    };
 
     return(
         <div className={`sidebar`} style={ {animation: `${active ? "slideIn" : "slideOut"} 0.5s forwards`} }>
