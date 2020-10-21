@@ -52,17 +52,17 @@
 
         .header-img{
             height: 60vh;
-            max-height: 450px;
+            max-height: 350px;
 
             &::after{
                 height: 60vh;
-                max-height: 450px;
+                max-height: 350px;
             }
         }
 
         .header-title{
             height: 60vh;
-            max-height: 450px;
+            max-height: 350px;
             h2{
                 font-size: 4rem;
             }
@@ -109,17 +109,17 @@
 
         .header-img{
             height: 65vh;
-            max-height: 650px;
+            max-height: 550px;
 
             &::after{
                 height: 65vh;
-                max-height: 650px;
+                max-height: 550px;
             }
         }
 
         .header-title{
             height: 65vh;
-            max-height: 650px;
+            max-height: 550px;
             h2{
                 font-size: 6rem;
             }
@@ -134,23 +134,23 @@
         .header-img{
             margin-top: 0;
             width: 100%;
-            height: 50vh;
+            height: 65vh;
             margin-bottom: 0rem;
-            max-height: 850px;
+            max-height: 600px;
     
             &::after{
-                height: 50vh;
+                height: 65vh;
                 margin-top: 0;
                 top: 165px;
-                max-height: 850px;
+                max-height: 600px;
             }
         }
     
         .header-title{
             margin-top: 165px;
             width: 100%;
-            height: 50vh;
-            max-height: 850px;
+            height: 65vh;
+            max-height: 600px;
             h2{
                 width: 95%;
                 font-size: 9.5rem;
@@ -162,11 +162,13 @@
     .header-container{
         .header-img{
             height: 65vh;
+            max-height: 625px;
+
             &::after{
                 height: 65vh;
                 margin-top: 0;
                 top: 185px;
-                max-height: 850px;
+                max-height: 625px;
             }
         }
     
@@ -174,7 +176,7 @@
             margin-top: 185px;
             width: 100%;
             height: 65vh;
-            max-height: 850px;
+            max-height: 625px;
             h2{
                 width: 95%;
                 font-size: 9.5rem;
@@ -188,13 +190,13 @@
     .header-container{
         .header-img{
             height: 65vh;
-            max-height: 950px;
+            max-height: 750px;
 
             &::after{
                 height: 65vh;
                 margin-top: 0;
                 top: 185px;
-                max-height: 950px;
+                max-height: 750px;
             }
         }
     
@@ -202,7 +204,7 @@
             margin-top: 185px;
             width: 100%;
             height: 65vh;
-            max-height: 950px;
+            max-height: 750px;
             h2{
                 width: 95%;
                 font-size: 12rem;

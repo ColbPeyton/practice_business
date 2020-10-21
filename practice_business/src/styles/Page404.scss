@@ -1,0 +1,32 @@
+@import './colors';
+.error{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+
+    .header-container{
+        .header-container-btn{
+            height: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 3rem 0;
+            padding-bottom: .5rem;
+            .link{
+                background: $primary-blue;
+                color: $background-light-primary;
+                padding: 25px 45px;
+                border-radius: 25px;
+                font-size: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p{
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

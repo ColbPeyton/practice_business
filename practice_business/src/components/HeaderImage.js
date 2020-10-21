@@ -7,7 +7,7 @@ function HeaderImage(props){
 
     const style = {
         backgroundImage: `url(${props.image})`,
-        backgroundPosition: 'center',
+        backgroundPosition: `center ${props.pos}`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat'
     }

@@ -20,7 +20,7 @@ function Trainers(){
     return(
         <div className='trainers'>
             <div className='header-container'>
-            <HeaderImage image={headerImage} title={`We're Here To Help`}/>
+            <HeaderImage image={headerImage} title={`We're Here To Help`} pos={'top'}/>
                 <div className='header-container-btn'>
                         <NavLink className='link' to='/appointment'>
                             <p>Let's Get Started</p>

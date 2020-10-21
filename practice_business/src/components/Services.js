@@ -23,7 +23,7 @@ function Services(){
     return(
         <main className='services'>
             <div className='services-container'>
-                <HeaderImage image={headerImage} title='We Got The Goods' />
+                <HeaderImage image={headerImage} title='We Got The Goods' pos={'center'}/>
                 <div className='body-container'>
                 <div className='body-about'>
                     <div className='about-title'>

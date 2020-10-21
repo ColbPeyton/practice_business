@@ -21,7 +21,7 @@ function Appointment(props){
         <main className='appointment'>
             <div className={`appointment-container small`}>
                 <div className='appointment-header'>
-                    <HeaderImage image={headerImage} title={'Let\'s Get You In Here'} />
+                    <HeaderImage image={headerImage} title={'Let\'s Get You In Here'} pos={'top'}/>
                     <div className='header-tagline'>
                         <h2>Fill Out The Form Below</h2>
                     </div>

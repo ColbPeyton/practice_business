@@ -1011,6 +1011,8 @@
         .home-container{
             &.large{
                 .home-header{
+                    height: 75vh;
+                    max-height: 700px;
                     .header-title{
                         margin-right: 20%;
 

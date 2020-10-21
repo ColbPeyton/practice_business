@@ -12,7 +12,7 @@ function About(props){
         <main className='about'>
             <div className={`about-container ${props.width <= 991 ? 'small' : 'large' }`}>
                 <div className='header-container'>
-                <HeaderImage image={headerImage} title={`Our Factory`}/>
+                <HeaderImage image={headerImage} title={`Our Factory`} pos={'center'}/>
                 </div>
                 <div className='about-container-tagline'>
                         <h1>The Story</h1>
