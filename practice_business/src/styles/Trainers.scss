@@ -158,8 +158,9 @@
         }
         .body-container{
             margin-top: 2rem;
-            height: 285vh;
-            max-height: 2450px;
+            height: 290vh;
+            max-height: 2600px;
+            min-height: 2550px;
             .contact{
                 height: 125px;
                 font-size: 5rem;
@@ -190,8 +191,9 @@
             }
         }
         .body-container{
-            height: 275vh;
-            max-height: 2900px;
+            height: 290vh;
+            min-height: 2550px;
+            max-height: 2600px;
             .contact{
                 height: 150px;
                 font-size: 5rem;
@@ -201,7 +203,7 @@
             .trainer-profiles{
                 width: 100%;
                 height: 250vh;
-                max-height: 2800px;
+                max-height: 2500px;
                 padding-bottom: 6rem;
             }
         }
@@ -212,7 +214,8 @@
 
         .body-container{
             height: 275vh;
-            max-height: 2900px;
+            min-height: 2550px;
+            max-height: 2700px;
         }
     }
  }
@@ -229,8 +232,9 @@
             }
         }
         .body-container{
-            height: 265vh;
-            max-height: 3000px;
+            height: 275vh;
+            min-height: 2800px;
+            max-height: 2700px;
             .contact{
                 height: 150px;
                 font-size: 7rem;
@@ -240,7 +244,7 @@
             .trainer-profiles{
                 width: 100%;
                 height: 250vh;
-                max-height: 2800px;
+                max-height: 2700px;
                 padding-bottom: 6rem;
             }
         }
