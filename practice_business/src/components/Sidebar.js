@@ -9,28 +9,12 @@ import '../styles/Sidebar.scss';
 function Sidebar(props){
 
     const [active, setActive] = useState(true);
-    const [height, setHeight] = useState(0);
 
-    useEffect(()=>{
-        window.addEventListener('scroll', handleScroll);
-
-        return() =>{
-            window.removeEventListener('scroll', handleScroll);
-        }
-    }, [])
 
     useEffect(()=>{
        setActive(props.sidebar)
     }, [props.sidebar]);
 
-    // Detect if mobile device, set to pageYOffset, set 0
-    useEffect(()=>{
-        if((typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1)){
-            setHeight(window.pageYOffset);
-        }else{
-            setHeight(0);
-        }
-    }, [props.sidebar, height])
 
     // call parent function to disable sidebar when link is clicked
     function disable(){
@@ -38,19 +22,6 @@ function Sidebar(props){
         props.disableSidebar();
     }
 
-    // Update position of sidebar based on scroll
-    function handleScroll(){
-        // if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-        if((typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1)){
-            setHeight(window.pageYOffset);
-        }else{
-            setHeight(0);
-        }
-    }
-
-    // function isMobileDevice() {
-    //     return ();
-    // };
 
     return(
         <div className={`sidebar ${active ? 'active' : ''}`} style={ {animation: `${active ? "slideIn" : "slideOut"} 0.5s forwards`} }>

@@ -32,7 +32,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: $background-light-secondary;
 
             .link{
                 background-color: #fff;
@@ -42,16 +41,11 @@
                 border: none;
                 height: 90px;
                 width: 100%;
-                &:hover{
-                    background-color: #fff;
-                }
 
                 img{
                     max-height: auto;
                     max-width: 100%;
                     cursor: pointer;
-                    background-color: $background-light-secondary;
-
                 }
     
             }
@@ -96,6 +90,10 @@
                             color: $font-color-light;
                             text-decoration: none;
                         }
+                        &:hover{
+                            background-color: $background-light-secondary;
+                            color: #333;
+                        }
 
                     }
                     
@@ -133,9 +131,7 @@
     .sidebar{
         z-index: 100;
         overflow: auto;
-        max-height: 2875px;
 
-        // animation: slideIn ease-in-out 0.5s forwards;
         .sidebar-container{
             width: 260px;
             height: 100%;
@@ -151,11 +147,11 @@
             }
             
             .sidebar-container-links{
-                height: 300px;
+                height: 290px;
                 width: 100%;
                 ul{
                     li{
-                        height: 45px;
+                        height: 42px;
                     }
                 }
             }
