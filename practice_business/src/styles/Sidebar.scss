@@ -13,6 +13,9 @@
     &.active{
         position: fixed;
     }
+    &.not-active{
+        position: fixed;
+    }
     .sidebar-container{
         width: 100%;
         max-width: 260px;
